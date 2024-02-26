@@ -1,13 +1,544 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #0c0a0a;
+    color: #1f2023;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1f2023;
+        color: #dadada;
+    }
+}
+
+
+/* .navbar {
+    width: 120px;
+    height: 100px;
+    left: calc(85% - 194px/2);
+    top: 65px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu li a:hover {
+    color: #00f;
+}
+
+.imgup {
+    width: 651px;
+    height: 414px;
+    left: 686px;
+    top: 224px;
+}
+
+.bnt{
+    width: 168px;
+    height: 53px;
+    left: calc(54% - 168px/2);
+    top: 1800px;
+}
+
+.logohader {
+    width: 1235px;
+    height: 0px;
+    left: 102px;
+    top: 115px;
+}
+
+.texthader {
+    width: 645px;
+    height: 287px;
+    left: 109px;
+    top: 287px;
+    color: #dadada;
+    border-radius: 8px;
+}
+
+.line2 {
+    width: 651px;
+    height: 1242px;
+    left: 90px;
+    top: 691px;
+    border: 1px;
+}
+
+.texthader2 {
+    width: 1440px;
+    height: 171px;
+    left: 300px;
+    top: 710px;
+    color: #dadada;
+    border: 1px;
+}
+
+.line3 {
+    width: 1051px;
+    left: calc(50% - 1051px/2 - 0.5px);
+    top: 19.09%;
+    bottom: 79.45%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 68px;
+    text-align: center;
+    color: white;
+    height: 68px;
+    top: 810px;
+    left: 194px;
+}
+
+.img2 {
+    width: 782px;
+    height: 439.88px;
+    left: 329px;
+    top: 930px;
+}
+
+.tfd {
+    width: 120px;
+    height: 100px;
+    left: calc(54% - 194px/2);
+    top: 65px;
+}
+
+.col1 {
+    width: 362px;
+    height: 411px;
+    left: 102px;
+    top: 1514px;
+    color: #dadada;
+}
+
+.col2 {
+    width: 362px;
+    height: 411px;
+    left: 539px;
+    top: 1514px;
+    color: #dadada;
+}
+
+.col3 {
+    width: 362px;
+    height: 411px;
+    left: 976px;
+    top: 1514px;
+    color: #dadada;
+}
+
+.bnt2 {
+    width: 168px;
+    height: 53px;
+    left: calc(54% - 168px/2);
+    top: 1800px;
+}
+
+.dis1 {
+    width: 241px;
+    left: calc(50% - 241px/2 - 0.5px);
+    top: 45.71%;
+    bottom: 52.83%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+    top: 1850px;
+    height: 68px;
+    left: 599px;
+}
+
+.img3 {
+    width: 782px;
+    height: 439.88px;
+    left: 329px;
+    top: 2000px;
+}
+
+.col4 {
+    width: 362px;
+    height: 400px;
+    left: 102px;
+    color: #dadada;
+    top: 2580px;
+}
+
+.col5 {
+    width: 362px;
+    height: 400px;
+    left: 539px;
+    color: #dadada;
+    top: 2580px;
+}
+
+.col6 {
+    width: 362px;
+    height: 400px;
+    left: 976px;
+    color: #dadada;
+    top: 2580px;
+}
+
+.bnt3 {
+    width: 168px;
+    height: 53px;
+    left: calc(54% - 168px/2);
+    top: 2900px;
+}
+
+.dri1 {
+    width: 144px;
+    left: calc(54% - 144px/2 - 1px);
+    top: 72.41%;
+    bottom: 26.12%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 68px;
+    text-align: center;
+    color: #FFFFFF;
+    top: 2950px;
+}
+
+.img4 {
+    width: 782px;
+    height: 439.88px;
+    left: 329px;
+    top: 3100px;
+}
+
+.col7 {
+    width: 362px;
+    height: 411px;
+    left: 102px;
+    top: 3700px;
+    color: #dadada;
+}
+
+.col8 {
+    width: 362px;
+    height: 411px;
+    left: calc(50% - 362px/2);
+    top: 3700px;
+    color: #dadada;
+}
+
+.col9 {
+    width: 362px;
+    height: 411px;
+    left: 976px;
+    top: 3700px;
+    color: #dadada;
+}
+
+.bnt4 {
+    width: 168px;
+    height: 53px;
+    left: calc(50% - 168px/2);
+    top: 4050px;
+}
+
+.endline {
+    width: 1242px;
+    height: 0px;
+    left: 90px;
+    top: 4200px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.group5 {
+    width: 1245.23px;
+    height: 24px;
+    left: calc(54% - 1245.23px/2 - 7.38px);
+    top: 4213px;
+}
+.full-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  } */
+
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a:hover {
+    color: #00f;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.had1 {
+    padding: 20px;
+    margin: 15px;
+    align-items: center;
+}
+
+.text1 {
+    color: #dadada;
+    margin: 128px 183px;
+    padding: 31px 
+}
+
+.img1 {
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.had2 {
+    padding: 20px auto;
+    margin: 15px;
+
+}
+
+.exthader2 {
+    color: white;
+    padding: 20px;
+    margin: 50px 49px;
+}
+
+.had {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.tfd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logohader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texthader2 {
+    color: white;
+    padding: 9px;
+    margin: 30px 270px;
+}
+
+.midline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bnt1 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.line3 {
+    color: #dadada;
+    right: auto;
+    text-align: center;
+}
+
+.img2 {
+    margin: auto;
+}
+
+.hed3 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+
+.dis1 {
+    color: #dadada;
+    right: auto;
+    text-align: center;
+}
+
+.img3 {
+    margin: auto;
+}
+
+.hed4 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.dri1 {
+    color: #dadada;
+    right: auto;
+    text-align: center;
+}
+
+.img4 {
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.bnt2 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.butt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.bnt3 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.butt3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.bnt4 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.butt4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9 {
+    color: #dadada;
+}
+
+.hed5 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.endline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loginf{
+    padding: 18px;
+    margin: 15px;
+    align-items: center;
+}
+.loginfm{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.logintext{
+    color: #dadada;
+    padding: 100px 0;
+    margin: 80px;
+    justify-content: center;
+    flex: content;
+    align-items: center;
+}
+
+.loginbutton{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
