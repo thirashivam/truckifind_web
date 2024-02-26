@@ -7,6 +7,7 @@ import Driver from './pages/Driver';
 import Login from './pages/Login';
 import './index.css';
 import './App.css';
+import Usertype from './pages/Usertype';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/dispatcher" element={<Dispatcher/>} />
         <Route path="/driver" element={<Driver/>} />
         <Route path="/login" element={<Login/>} />
+        <Route path="/Usertype" element={<Usertype />} />
     </Routes>
     </>
   );

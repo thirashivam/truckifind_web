@@ -542,3 +542,55 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
+
+.Usertext{
+    color: #dadada;
+    padding: 41px;
+    margin: 63px;
+    justify-content: center;
+    flex: content;
+    align-items: center;
+}
+.usertype{
+    padding: 18px;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.radio1 , .radio2,.radio3{
+    background: rgba(17, 37, 53, 1);
+    border-image-source: linear-gradient(89.35deg, #1062A1 2.37%, #229FFF 105.12%);
+    color: #fff;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.dispatcherfrom{
+    display: flex;
+    justify-content: center;
+}
+
+.textbroker{
+    color: #dadada;
+    margin: 20px;
+}
+.brokerline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgupload{
+    color: #dadada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+.ppbroker{
+    margin: 10px;
+    padding: 4px;
+}
+

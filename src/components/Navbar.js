@@ -10,7 +10,7 @@ const Navbar = () => {
         <li>
             <Link to={"/"}>Home</Link>
         </li>
-        <li>
+        {/* <li>
             <Link to={"/broker"}>Broker</Link>
         </li>
         <li>
@@ -18,7 +18,7 @@ const Navbar = () => {
         </li>
         <li>
             <Link to={"/driver"}>Driver</Link>
-        </li>
+        </li> */}
         <li>
             <Link to={"/login"}>Login</Link>
         </li>

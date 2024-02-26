@@ -8,8 +8,13 @@ import Group5 from '../photo/Group5.png'
 import Grouplp from '../photo/Grouplp.png'
 import LoginFrame from '../photo/LoginFrame.png'
 import { Box } from '@mui/material'
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+  const navigate = useNavigate();
+  const goToUsertypePage = () => {
+    navigate('/Usertype');
+  };
   return (
     <>
       <div>
@@ -25,15 +30,15 @@ function Login() {
       <div>
         <Row className='loginf'>
           <Col className='loginfm' sm={12} >
-              <Box height={527} width={600} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
+            <Box height={527} width={600} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
               <div style={{ background: `url(${LoginFrame})` }}>
                 <div className='logintext'>
                   <h1>Login !</h1>
-                    <Input style={{width: '80%'}} /><br /> <br/>
-                    <button className='loginbutton' type="submit" style={{width: '80%'}}>Login</button>
+                  <Input style={{ width: '80%' }} /><br /> <br />
+                  <button onClick={goToUsertypePage} className='loginbutton' type="submit" style={{ width: '80%' }}>Login</button>
                 </div>
-                </div>
-              </Box>
+              </div>
+            </Box>
           </Col>
           <Col sm={12} >
             <div >

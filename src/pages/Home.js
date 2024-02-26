@@ -21,9 +21,17 @@ import Frame9 from '../photo/Frame9.png'
 import Line3 from '../photo/Line3.png'
 import Group5 from '../photo/Group5.png'
 import { Box } from '@mui/material'
+import { useNavigate } from'react-router-dom';
+
+
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+  const goToLoginPage = () => {
+    navigate('/login');
+  };
   return (
     <div>
       <div>
@@ -42,7 +50,7 @@ const Home = () => {
           <div className='text1'>
             <h1>Streamlining Freight Connections for Brokers, Dispatchers & Drivers!
               Partner with us</h1>
-            <button className='bnt1'>Partner with us</button>
+            <button className='bnt1' onClick={goToLoginPage}>Partner with us</button>
           </div>
         </Col>
         <Col sm={12}>
@@ -57,10 +65,10 @@ const Home = () => {
         </Row>
         <Row className='hed2'>
           <div className='texthader2'>
-            Welcome to TruckiFind, Your Ultimate solution for efficient and streamlined trucking operations.Enjoy our
+            <b>Welcome to TruckiFind</b>, Your Ultimate solution for efficient and streamlined trucking operations.Enjoy our
             simplified Job posting and Job Searching process, seamless in-App communication, Document management
             features such as scanning, signing and storage. Efficiently Manage Multiple Jobs, while you track
-            progress at each and every point. Join our growing network and experience the future of trucking.
+            progress at each and every point.<b> Join our growing network and experience the future of trucking.</b>
           </div>
         </Row>
       </div>
@@ -101,7 +109,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row className='butt2'>
-            <button className='bnt2'>Partner with us</button>
+            <button className='bnt2' onClick={goToLoginPage}>Partner with us</button>
           </Row>
         </div>
       </div>
@@ -143,7 +151,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row className='butt3'>
-            <button className='bnt3'>Partner with us</button>
+            <button className='bnt3' onClick={goToLoginPage}>Partner with us</button>
           </Row>
         </div>
       </div>
@@ -184,7 +192,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row className='butt3'>
-            <button className='bnt4'>Partner with us</button>
+            <button className='bnt4' onClick={goToLoginPage}>Partner with us</button>
           </Row>
         </div>
       </div>
