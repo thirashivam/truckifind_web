@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input, Row } from 'antd'
+import { Input, Row, Form } from 'antd'
 import { Col } from 'antd'
 import tfd from '../photo/tfd.png'
 import Group from '../photo/Group.png'
@@ -9,12 +9,17 @@ import Grouplp from '../photo/Grouplp.png'
 import LoginFrame from '../photo/LoginFrame.png'
 import { Box } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
+// import PhoneInput from 'react-phone-number-input'
+// import { useState } from 'react'
+
+
 
 function Login() {
   const navigate = useNavigate();
   const goToUsertypePage = () => {
     navigate('/Usertype');
   };
+  // const [value, setValue] = useState()
   return (
     <>
       <div>
@@ -34,7 +39,17 @@ function Login() {
               <div style={{ background: `url(${LoginFrame})` }}>
                 <div className='logintext'>
                   <h1>Login !</h1>
-                  <Input style={{ width: '80%' }} /><br /> <br />
+                  <Form.Item  >
+                  <Input className='driInput'
+                    style={{
+                      width: '80%',
+                      border: 'none',
+                      color: '#FFFFFF',
+                      backgroundColor: '#112535',
+                    }}
+                    placeholder="Mobile number"
+                  />
+                  </Form.Item>
                   <button onClick={goToUsertypePage} className='loginbutton' type="submit" style={{ width: '80%' }}>Login</button>
                 </div>
               </div>

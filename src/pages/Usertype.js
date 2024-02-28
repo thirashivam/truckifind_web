@@ -13,6 +13,10 @@ function Usertype() {
   const navigate = useNavigate();
   const [selectedOption, setSelectedOption] = useState('');
 
+  const handleRadioChange = (event) => {
+    setSelectedOption(event.target.value);
+  };
+
   const handleContinue = () => {
     if (selectedOption === 'broker') {
       navigate('/broker');
@@ -24,6 +28,8 @@ function Usertype() {
       alert('Please select an option');
     }
   };
+
+
   return (
     <>
       <div>
@@ -43,14 +49,41 @@ function Usertype() {
               <div className='Usertext'>
                 <h1>Select your role !</h1>
                 <Space direction="vertical" className='radio1' style={{ width: '70%' }}>
-                  <label  > Broker<input type="radio" value="option1" onChange={() => setSelectedOption('broker')} /></label>
-                </Space><br/> <br/>
+                  <label>
+                    Broker
+                    <input
+                      type="radio"
+                      name="userType"
+                      value="broker"
+                      checked={selectedOption === 'broker'}
+                      onChange={handleRadioChange}
+                    />
+                  </label>
+                </Space><br /> <br />
                 <Space direction="vertical" className='radio1' style={{ width: '70%' }}>
-                  <label  > Dispatcher<input type="radio" value="option1" onChange={() => setSelectedOption('dispatcher')} /></label>
-                </Space><br/> <br/>
+                  <label>
+                    Dispatcher
+                    <input
+                      type="radio"
+                      name="userType"
+                      value="dispatcher"
+                      checked={selectedOption === 'dispatcher'}
+                      onChange={handleRadioChange}
+                    />
+                  </label>
+                </Space><br /> <br />
                 <Space direction="vertical" className='radio1' style={{ width: '70%' }} >
-                  <label  > Driver<input type="radio" value="option1" onChange={() => setSelectedOption('driver')} /></label>
-                </Space><br/> <br/>
+                  <label>
+                    Driver
+                    <input
+                      type="radio"
+                      name="userType"
+                      value="driver"
+                      checked={selectedOption === 'driver'}
+                      onChange={handleRadioChange}
+                    />
+                  </label>
+                </Space><br /> <br />
                 <button className='loginbutton' type="submit" style={{ width: '80%' }} onClick={handleContinue}>Continue</button>
               </div>
             </div>

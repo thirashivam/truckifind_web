@@ -317,7 +317,7 @@ body {
 .text1 {
     color: #dadada;
     margin: 128px 183px;
-    padding: 31px 
+    padding: 31px
 }
 
 .img1 {
@@ -361,7 +361,7 @@ body {
     margin: 30px 270px;
 }
 
-.midline{
+.midline {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -393,8 +393,6 @@ body {
     padding: 30px;
 }
 
-
-
 .dis1 {
     color: #dadada;
     right: auto;
@@ -420,15 +418,6 @@ body {
 .img4 {
     margin: auto;
 }
-
-
-
-
-
-
-
-
-
 
 .bnt2 {
     background-color: #007bff;
@@ -514,17 +503,19 @@ body {
 }
 
 
-.loginf{
+.loginf {
     padding: 18px;
     margin: 15px;
     align-items: center;
 }
-.loginfm{
+
+.loginfm {
     display: flex;
     justify-content: right;
     align-items: center;
 }
-.logintext{
+
+.logintext {
     color: #dadada;
     padding: 100px 0;
     margin: 80px;
@@ -533,7 +524,7 @@ body {
     align-items: center;
 }
 
-.loginbutton{
+.loginbutton {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -543,7 +534,7 @@ body {
     border-radius: 5px;
 }
 
-.Usertext{
+.Usertext {
     color: #dadada;
     padding: 41px;
     margin: 63px;
@@ -551,13 +542,17 @@ body {
     flex: content;
     align-items: center;
 }
-.usertype{
+
+.usertype {
     padding: 18px;
     margin: 15px;
     align-items: center;
     justify-content: center;
 }
-.radio1 , .radio2,.radio3{
+
+.radio1,
+.radio2,
+.radio3 {
     background: rgba(17, 37, 53, 1);
     border-image-source: linear-gradient(89.35deg, #1062A1 2.37%, #229FFF 105.12%);
     color: #fff;
@@ -567,21 +562,24 @@ body {
     cursor: pointer;
     border-radius: 5px;
 }
-.dispatcherfrom{
+
+.dispatcherfrom {
     display: flex;
     justify-content: center;
 }
 
-.textbroker{
+.textbroker {
     color: #dadada;
     margin: 20px;
 }
-.brokerline{
+
+.brokerline {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.imgupload{
+
+.imgupload {
     color: #dadada;
     display: flex;
     justify-content: center;
@@ -589,8 +587,99 @@ body {
     padding: 10px;
     margin: 20px;
 }
-.ppbroker{
+
+.ppbroker {
     margin: 10px;
     padding: 4px;
 }
 
+.brokertext1,
+.brokertext2,
+.brokertext3 {
+    color: #dadada;
+}
+
+.brokercol1,
+.brokercol2,
+.brokercol3 {
+    padding: 20px;
+}
+
+
+.brokerbuton1 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.brokerbutt1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.driverrow1,
+.driverrow2,
+.driverrow3,
+.driverrow4,
+.driverrow5,
+.driverrow6,
+.driverrow7{
+    margin: 38px;
+}
+.driverrow8{
+    margin: 38px;
+    align-items: center;
+    justify-content: center;
+}
+
+.driveraddress {
+    left: 20;
+}
+.groupdriver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.endlinedri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;;
+}
+
+.buttondis1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    gap: 83px;
+}
+.buttonDis1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.texDispatcher{
+    color: #dadada;
+    left: 50%;
+    /* right: 30%; */
+    /* text-align: center; */
+    /* text-align: justify; */
+
+}
+.textDriver{
+    color: #dadada;
+    margin-left: 49px;
+}
+.driInput::placeholder {
+    color: #FFFFFF;
+  }
