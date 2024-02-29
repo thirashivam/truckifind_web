@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Group from '../photo/Group.png'
 import Group1 from '../photo/Group1.png'
 import Line2 from '../photo/Line2.png'
@@ -35,13 +34,14 @@ const Home = () => {
   return (
     <div>
       <div>
-        <Row className='had'>
-          <div className='navbar'><Navbar /></div>
+        <Row className='had_logo'>
+          <div className='haderlogo'>
           <div className="tfd">
             <img src={tfd} alt="Logo" />
           </div>
-          <div className='logohader'>
+          {/* <div className='logohader'>
             <img src={Group} alt="Logo" />
+          </div> */}
           </div>
         </Row>
       </div>
@@ -79,10 +79,12 @@ const Home = () => {
         <div className='line3'>
           <h1>Brokers</h1>
         </div>
-        <Row>
+        <Row className='heder_img'>
+          <Col sm={{span: 12}} md={{span: 9}} lg={{span:7}}>
           <div className='img2'>
-            <img src={Group2} alt="img2" />
+            <img className='heder_img2' src={Group2} alt="img2" />
           </div>
+          </Col>
         </Row>
         <div>
           <Row className='hed3'>
@@ -120,10 +122,12 @@ const Home = () => {
         <div className='dis1'>
           <h1>Dispatchers</h1>
         </div>
-        <Row>
-          <div className='img3'>
-            <img src={Group3} alt="img3" />
+        <Row className='heder_img'>
+          <Col sm={{span: 12}} md={{span: 9}} lg={{span:7}}>
+          <div className='img2'>
+            <img className='heder_img2' src={Group3} alt="img3" />
           </div>
+          </Col>
         </Row>
         <div >
           <Row className='hed4'>
@@ -162,10 +166,12 @@ const Home = () => {
         <div className='dri1'>
           <h1>Drivers</h1>
         </div>
-        <Row>
-          <div className='img4'>
-            <img src={Group4} alt="img4" />
+        <Row className='heder_img'>
+          <Col sm={{span: 12}} md={{span: 9}} lg={{span:7}}>
+          <div className='img2'>
+            <img className='heder_img2' src={Group4} alt="img4" />
           </div>
+          </Col>
         </Row>
         <div>
           <Row className='hed5'>

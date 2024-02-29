@@ -344,16 +344,20 @@ body {
     margin: 50px 49px;
 }
 
-.had {
-    height: 100%;
-    display: table;
-    width: 100%;
+.had_logo {
+    position: relative!important;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.haderlogo{
+    align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: center!important;
 }
 
 .tfd {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
 }
 
 .logohader {
@@ -403,6 +407,12 @@ body {
 
 .img2 {
     margin: auto;
+}
+.heder_img2{
+    width: 100%;
+}
+.heder_img{
+    justify-content: center!important;
 }
 
 .hed3 {
