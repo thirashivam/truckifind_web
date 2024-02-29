@@ -34,7 +34,7 @@ function Login() {
       </div>
       <div>
         <Row className='loginf'>
-          <Col className='loginfm' sm={12} >
+          <Col className='loginfm' sm={{span: 12}} md={{span: 8}} >
             <Box height={527} width={600} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
               <div style={{ background: `url(${LoginFrame})` }}>
                 <div className='logintext'>
@@ -55,7 +55,7 @@ function Login() {
               </div>
             </Box>
           </Col>
-          <Col sm={12} >
+          <Col sm={{span: 12}} md={{span: 8}} >
             <div >
               <img src={Grouplp} alt='loginpage' />
             </div>

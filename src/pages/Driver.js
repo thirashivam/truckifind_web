@@ -94,16 +94,19 @@ function Driver() {
         <div className='line3'>
           <h1>Let’s create your profile</h1>
         </div>
-        <Row className='dispatcherfrom'>
+        
           <Box height={2150} width={1226} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
+          <Row className='dispatcherfrom'>
+        <Col  sm={{span: 24}} md={{span: 8}}>
             <div className='textDriver'>
-              <h1>Personal</h1>
+              {/* <h1>Personal</h1> */}
+              <label className='driver_level'>Personal</label>
             </div>
             <div className='brokerline'>
               <img src={Line16} alt="line2" />
             </div>
             <Row className='driverrow1'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Name</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -116,7 +119,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Do you have a TSA Card?</h3>
                 <div className='buttonDis1'>
                   <Button
@@ -135,7 +138,7 @@ function Driver() {
                   </Button>
                 </div>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Do you have TWIC?</h3>
                 <div className='buttonDis1'>
                   <Button
@@ -156,7 +159,7 @@ function Driver() {
               </Col>
             </Row>
             <Row className='driverrow2'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Are you HAZMAT Certified?</h3>
                 <div className='buttonDis1'>
                   <Button
@@ -183,7 +186,7 @@ function Driver() {
               <img src={Line16} alt="line2" />
             </div>
             <Row className='driverrow3'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Company Name</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -203,7 +206,7 @@ function Driver() {
               </Col>
             </Row>
             <Row className='driverrow4'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}} >
                 <Form.Item  >
                   <Input className='driInput'
                     style={{
@@ -215,7 +218,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <Form.Item  >
                   <Input className='driInput'
                     style={{
@@ -227,7 +230,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <Form.Item  >
                   <Input className='driInput'
                     style={{
@@ -239,7 +242,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <Form.Item  >
                   <Input className='driInput'
                     style={{
@@ -251,7 +254,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <Form.Item  >
                   <Input className='driInput'
                     style={{
@@ -263,7 +266,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <Form.Item  >
                   <Input className='driInput'
                     style={{
@@ -277,7 +280,7 @@ function Driver() {
               </Col>
             </Row>
             <Row className='driverrow5'>
-              <Col className='brokercol1' sm={8} >
+              <Col className='brokercol1' sm={{span: 12}} md={{span: 8}} >
                 <h3 className='brokertext1'>MC#</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -290,7 +293,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' sm={8}  >
+              <Col className='brokercol2' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext2'>DOT#</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -303,7 +306,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Email</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -318,7 +321,7 @@ function Driver() {
               </Col>
             </Row>
             <Row className='driverrow6'>
-              <Col className='brokercol1' sm={8} >
+              <Col className='brokercol1' sm={{span: 12}} md={{span: 8}} >
                 <h3 className='brokertext1'>Phone#</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -331,7 +334,7 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' sm={8}  >
+              <Col className='brokercol2' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext2'>Dispatcher Phone#</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -354,7 +357,7 @@ function Driver() {
               <img src={Line16} alt="line2" />
             </div>
             <Row className='driverrow7'>
-              <Col className='brokercol3' sm={10}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Do you want to register yourself as a Driver too?</h3>
                 <div className='buttonDis1'>
                   <Button
@@ -376,7 +379,7 @@ function Driver() {
             </Row>
             <div >
               <Row className='driverrow8'>
-                <Col className='brokercol3' sm={12}  >
+                <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                   <h3 className='brokertext3'>Upload your Driver’s  License</h3><br />
                   <h3 className='brokertext3'>Front</h3>
                   <Upload
@@ -391,7 +394,7 @@ function Driver() {
                     {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', height: '300px', }} />) : (uploadButton)}
                   </Upload>
                 </Col>
-                <Col className='brokercol3' sm={12}  >
+                <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                   <h3 className='brokertext3'>...</h3><br />
                   <h3 className='brokertext3'>Back</h3>
                   <Upload
@@ -411,8 +414,10 @@ function Driver() {
             <Row className='brokerbutt1'>
               <button className='brokerbuton1' type="submit" style={{ width: '40%' }}>Create my account</button>
             </Row>
-          </Box>
+            </Col>
         </Row>
+          </Box>
+          
       </div>
       <div>
         <div className='endlinedri'>

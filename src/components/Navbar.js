@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
+        {/* <li>
             <Link to={"/"}>Home</Link>
-        </li>
+        </li> */}
         {/* <li>
             <Link to={"/broker"}>Broker</Link>
         </li>
@@ -20,9 +20,9 @@ const Navbar = () => {
         <li>
             <Link to={"/driver"}>Driver</Link>
         </li> */}
-        <li>
+        {/* <li>
             <Link to={"/login"}>Login</Link>
-        </li>
+        </li> */}
       </ul>
       <div onClick={handleClick}>
       </div>

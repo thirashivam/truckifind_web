@@ -98,6 +98,7 @@ function Dispatcher() {
           <h1>Let’s create your profile</h1>
         </div>
         <Row className='dispatcherfrom'>
+          <Col  sm={{span: 24}} md={{span: 8}}>
           <Box height={1873} width={1226} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
             <div className='textDriver'>
               <h1>Personal</h1>
@@ -106,7 +107,7 @@ function Dispatcher() {
               <img src={Line16} alt="line2" />
             </div>
             <Row className='driverrow1'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Name</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -119,7 +120,7 @@ function Dispatcher() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Do you have a TSA Card?</h3>
                 <div className='buttonDis1'>
                   <Button
@@ -138,7 +139,7 @@ function Dispatcher() {
                   </Button>
                 </div>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Do you have TWIC?</h3>
                 <div className='buttonDis1'>
                   <Button
@@ -159,7 +160,7 @@ function Dispatcher() {
               </Col>
             </Row>
             <Row className='driverrow2'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Are you HAZMAT Certified?</h3>
                 <div className='buttonDis1'>
                   <Button
@@ -181,7 +182,7 @@ function Dispatcher() {
             </Row>
 
             <Row className='driverrow8'>
-              <Col className='brokercol3' sm={12}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Upload your Driver’s  License</h3><br />
                 <h3 className='brokertext3'>Front</h3>
                 <Upload
@@ -196,7 +197,7 @@ function Dispatcher() {
                   {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
                 </Upload>
               </Col>
-              <Col className='brokercol3' sm={12}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>...</h3><br />
                 <h3 className='brokertext3'>Back</h3>
                 <Upload
@@ -219,7 +220,7 @@ function Dispatcher() {
               <img src={Line16} alt="line2" />
             </div>
             <Row className='driverrow3'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Company MC#</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -242,7 +243,7 @@ function Dispatcher() {
               <img src={Line16} alt="line2" />
             </div>
             <Row className='driverrow3'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Truck Type</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -255,7 +256,8 @@ function Dispatcher() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
+                <div className='weight_dis'>
                 <h3 className='brokertext3'>Truck Size</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -264,11 +266,15 @@ function Dispatcher() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Enter size        feet"
+                    placeholder="Enter size"
+                    
                   />
+                  <span class="weight_count">feet</span>
                 </Form.Item>
+                </div>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
+              <div className='weight_dis'>
                 <h3 className='brokertext3'>Truck Height</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -277,13 +283,16 @@ function Dispatcher() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Enter height       feet"
+                    placeholder="Enter height"
                   />
+                  <span class="weight_count">feet</span>
                 </Form.Item>
+                </div>
               </Col>
             </Row>
             <Row className='driverrow3'>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
+              <div className='weight_dis'>
                 <h3 className='brokertext3'>Truck Width</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -292,11 +301,14 @@ function Dispatcher() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Enter weight      feet"
+                    placeholder="Enter weight"
                   />
+                  <span class="weight_count">feet</span>
                 </Form.Item>
+                </div>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
+              <div className='weight_dis'>
                 <h3 className='brokertext3'>Door Height</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -305,11 +317,14 @@ function Dispatcher() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Enter height       feet"
+                    placeholder="Enter height"
                   />
+                  <span class="weight_count">feet</span>
                 </Form.Item>
+                </div>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
+              <div className='weight_dis'>
                 <h3 className='brokertext3'>Truck Max Capacity</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -318,13 +333,15 @@ function Dispatcher() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Enter capacity       lbs"
+                    placeholder="Enter capacity"
                   />
+                  <span class="weight_count">lbs</span>
                 </Form.Item>
+                </div>
               </Col>
             </Row>
             <Row className='driverrow2'>
-              <Col className='brokercol3' sm={24}  >
+              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Accessories</h3>
                 <div className='buttondis1'>
                   <Button
@@ -376,6 +393,7 @@ function Dispatcher() {
               <button className='brokerbuton1' type="submit" style={{ width: '40%' }}>Create my account</button>
             </Row>
           </Box>
+          </Col>
         </Row>
       </div>
       <div>
