@@ -20,7 +20,7 @@ import Frame9 from '../photo/Frame9.png'
 import Line3 from '../photo/Line3.png'
 import Group5 from '../photo/Group5.png'
 import { Box } from '@mui/material'
-import { useNavigate } from'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -33,44 +33,42 @@ const Home = () => {
   };
   return (
     <div>
-      <div>
+      <div className='hader_Image_logo'>
         <Row className='had_logo'>
-          <div className='haderlogo'>
-          <div className="tfd">
-            <img src={tfd} alt="Logo" />
-          </div>
-          {/* <div className='logohader'>
+            <div className="hader_logo_img">
+              <img className='hader_logo_img1' src={tfd} alt="Logo" />
+            </div>
+            {/* <div className='logohader'>
             <img src={Group} alt="Logo" />
           </div> */}
-          </div>
         </Row>
       </div>
       <Row className='had1'>
-        <Col sm={{span: 12}} md={{span: 6}}>
+        <Col sm={{ span: 12 }} md={{ span: 6 }}>
           <div className='text1'>
             <p className='text12'>Streamlining Freight Connections for Brokers, Dispatchers & Drivers!
               Partner with us</p>
           </div>
           <div className='bnt12'>
-          <button className='bnt1' onClick={goToLoginPage}>Partner with us</button>
+            <button className='bnt1' onClick={goToLoginPage}>Partner with us</button>
           </div>
         </Col>
-        <Col sm={{span: 12}} md={{span: 6}}>
-          <div className='img1'>
-            <img src={Group1} alt="vidoe" />
+        <Col className='img_hader_video1' sm={{ span: 12 }} md={{ span: 6 }}>
+          <div className='img_hader_video2'>
+            <img className='img_hader_video' src={Group1} alt="vidoe" />
           </div>
         </Col>
       </Row>
       <div>
         <Row className='midline'>
-          <img src={Line2} alt="line2" />
-        
+          {/* <img src={Line2} alt="line2" /> */}
+
           <div className='texthader2'>
             <p className='texthader21'>
-            <b>Welcome to TruckiFind</b>, Your Ultimate solution for efficient and streamlined trucking operations.Enjoy our
-            simplified Job posting and Job Searching process, seamless in-App communication, Document management
-            features such as scanning, signing and storage. Efficiently Manage Multiple Jobs, while you track
-            progress at each and every point.<b> Join our growing network and experience the future of trucking.</b>
+              <b>Welcome to TruckiFind</b>, Your Ultimate solution for efficient and streamlined trucking operations.Enjoy our
+              simplified Job posting and Job Searching process, seamless in-App communication, Document management
+              features such as scanning, signing and storage. Efficiently Manage Multiple Jobs, while you track
+              progress at each and every point.<b> Join our growing network and experience the future of trucking.</b>
             </p>
           </div>
         </Row>
@@ -80,31 +78,49 @@ const Home = () => {
           <h1>Brokers</h1>
         </div>
         <Row className='heder_img'>
-          <Col sm={{span: 12}} md={{span: 9}} lg={{span:7}}>
-          <div className='img2'>
-            <img className='heder_img2' src={Group2} alt="img2" />
-          </div>
+          <Col sm={{ span: 12 }} md={{ span: 9 }} lg={{ span: 7 }}>
+            <div className='img2'>
+              <img className='heder_img2' src={Group2} alt="img2" />
+            </div>
           </Col>
         </Row>
         <div>
           <Row className='home_box'>
-            <Col className='home_Col1' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame} alt="frm1" />
-                <h2>Mobile App & Web Portal</h2>
+            <Col className='home_Col1' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col1_frame'>
+                <img src={Frame} alt="frm1" width={58} height={78} />
+              </div>
+              <div className='home_Col1_hading'>
+                <p>Mobile App & Web Portal</p>
+              </div>
+              <div className='home_Col1_paragraph'>
                 <p>Enjoy the flexibility that comes with having access to an advanced Web portal as well as a mobile
                   App. Post your Jobs from wherever you want. Home, Office, Car, you name it!...</p>
+              </div>
             </Col>
-            <Col className='home_Col2' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame2} alt="frm2" />
-                <h2>Easily Post Jobs Loads</h2>
+            <Col className='home_Col2' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col2_frame'>
+                <img src={Frame2} alt="frm2" width={58} height={78} />
+              </div>
+              <div className='home_Col2_hading'>
+                <p>Easily Post Jobs Loads</p>
+              </div>
+              <div className='home_Col2_paragraph'>
                 <p>Our user-friendly interface and advanced features make it simple
                   for you to post jobs, stay organized and enhance productivity</p>
+              </div>
             </Col>
-            <Col className='home_Col3' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame3} alt="frm3" />
-                <h2>Pin Point Carrier Search</h2>
+            <Col className='home_Col3' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col3_frame'>
+                <img src={Frame3} alt="frm3" width={58} height={78} />
+              </div>
+              <div className='home_Col3_hading'>
+                <p>Pin Point Carrier Search</p>
+              </div>
+              <div className='home_Col3_paragraph'>
                 <p>We are taking the guesswork out of brokerage! Our advanced search features will help you find
                   available carriers with the highest level of precision imaginable, to ensure timely delivery...</p>
+              </div>
             </Col>
           </Row>
           <Row className='butt2'>
@@ -117,32 +133,49 @@ const Home = () => {
           <h1>Dispatchers</h1>
         </div>
         <Row className='heder_img'>
-          <Col sm={{span: 12}} md={{span: 9}} lg={{span:7}}>
-          <div className='img2'>
-            <img className='heder_img2' src={Group3} alt="img3" />
-          </div>
+          <Col sm={{ span: 12 }} md={{ span: 9 }} lg={{ span: 7 }}>
+            <div className='img2'>
+              <img className='heder_img2' src={Group3} alt="img3" />
+            </div>
           </Col>
         </Row>
         <div >
           <Row className='home_box2'>
-            <Col className='home_Col4' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame4} alt="frm4" />
-                <h2>Easily Search Profitable Loads</h2>
+            <Col className='home_Col4' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col4_frame'>
+                <img src={Frame4} alt="frm4" width={58} height={78} />
+              </div>
+              <div className='home_Col4_hading'>
+                <p>Easily Search Profitable Loads</p>
+              </div>
+              <div className='home_Col4_paragraph'>
                 <p>With our growing network of brokers all over the nation, the opportunities are endless. Our highly
                   customizable job searching features will land you the right jobs by just a few clicks.</p>
+              </div>
             </Col>
-            <Col className='home_Col5' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame5} alt="frm5" />
-                <h2>Efficiently Manage Multiple Drivers</h2>
-                <p>Managing multiple drivers has never been easier, One interface, several
-                  drivers! Our driver management features will help you become more
+            <Col className='home_Col5' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col5_frame'>
+                <img src={Frame5} alt="frm5" width={58} height={78} />
+              </div>
+              <div className='home_Col5_hading'>
+                <p>Efficiently Manage Multiple Drivers</p>
+              </div>
+              <div className='home_Col5_paragraph'>
+                <p>Managing multiple drivers has never been easier, One interface, several drivers! Our driver management features will help you become more
                   efficient with handling multiple drivers at the same time...</p>
+              </div>
             </Col>
-            <Col className='home_Col6' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame6} alt="frm6" />
-                <h2>Efficiently Manage Loads</h2>
+            <Col className='home_Col6' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col6_frame'>
+                <img src={Frame6} alt="frm6" width={58} height={78} />
+              </div>
+              <div className='home_Col6_hading'>
+                <p>Efficiently Manage Loads</p>
+              </div>
+              <div className='home_Col6_paragraph'>
                 <p>Experience the power of our load management features that will enable you to
                   easily acquire loads from brokers,sign necessary contracts and pass them on to your drivers by just a click.</p>
+              </div>
             </Col>
           </Row>
           <Row className='butt3'>
@@ -155,31 +188,49 @@ const Home = () => {
           <h1>Drivers</h1>
         </div>
         <Row className='heder_img'>
-          <Col sm={{span: 12}} md={{span: 9}} lg={{span:7}}>
-          <div className='img2'>
-            <img className='heder_img2' src={Group4} alt="img4" />
-          </div>
+          <Col sm={{ span: 12 }} md={{ span: 9 }} lg={{ span: 7 }}>
+            <div className='img2'>
+              <img className='heder_img2' src={Group4} alt="img4" />
+            </div>
           </Col>
         </Row>
         <div>
           <Row className='home_box3'>
-            <Col className='home_Col7' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame7} alt="frm7" />
-                <h2>See and be Seen!</h2>
+            <Col className='home_Col7' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col7_frame'>
+                <img src={Frame7} alt="frm7" width={58} height={78} />
+              </div>
+              <div className='home_Col7_hading'>
+                <p>See and be Seen!</p>
+              </div>
+              <div className='home_Col7_paragraph'>
                 <p>Our advanced GPS based driver locator features will always show brokers in our
                   network, where you are, and you will never miss a job! All you need to do is to turn your availability button on...</p>
+              </div>
             </Col>
-            <Col className='home_Col8' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame8} alt="frm8" />
-                <h2>Search for Jobs</h2>
+            <Col className='home_Col8' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col8_frame'>
+                <img src={Frame8} alt="frm8" width={58} height={78} />
+              </div>
+              <div className='home_Col8_hading'>
+                <p>Search for Jobs</p>
+              </div>
+              <div className='home_Col8_paragraph'>
                 <p>Take Control of your routes!  don't be stuck in the middle of nowhere, waiting and
                   hoping for your dispatcher to search through thousands of jobs, until they find you a gig. Search for jobs...</p>
+              </div>
             </Col>
-            <Col className='home_Col9' sm={{span: 12}} md={{span: 6}} lg={{span:4}}>
-                <img src={Frame9} alt="frm9" />
-                <h2>Scan, Sign and Store Documents</h2>
+            <Col className='home_Col9' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+              <div className='home_Col9_frame'>
+                <img src={Frame9} alt="frm9" width={58} height={78} />
+              </div>
+              <div className='home_Col9_hading'>
+                <p>Scan, Sign and Store Documents</p>
+              </div>
+              <div className='home_Col9_paragraph'>
                 <p>Forget the old days of running to the print shop to scan and sign important documents.
                   Now you can save your valuable time with our document management features. Scan...</p>
+              </div>
             </Col>
           </Row>
           <Row className='butt3'>
@@ -187,14 +238,14 @@ const Home = () => {
           </Row>
         </div>
       </div>
-      <div>
+      {/* <div>
         <div className='endline'>
           <img src={Line3} alt="line3" />
         </div>
         <div className='group5'>
           <img src={Group5} alt="group5" />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -349,12 +349,7 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
-.haderlogo{
-    align-items: center;
-    display: flex;
-    flex-wrap: inherit;
-    justify-content: center!important;
-}
+
 
 .tfd {
     margin: auto;
@@ -421,6 +416,61 @@ body {
     padding: 30px;
 }
 
+.hader_Image_logo{
+    position: relative!important;
+}
+.had_logo {
+    align-items: center;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+}
+.hader_logo_img{
+    margin: auto;
+}
+.hader_logo_img1{
+    margin: auto;
+}
+.hader_Image_logo2{
+    background: #010507;
+    background: radial-gradient(circle,#010507 0,#020d14 86%);
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.hader_Image_logo2_col1{
+    justify-content: center!important;
+    display: flex!important;
+}
+
+
+
+
+.img_hader_video{
+    justify-content: center!important;
+}
+.img_hader_video1{
+    flex-shrink: 0;
+    margin-top: var(--bs-gutter-y);
+    max-width: 100%;
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    padding-right: calc(var(--bs-gutter-x)*.5);
+    width: 100%;
+
+}
+.img_hader_video2{
+    justify-content: center!important;
+    display: flex!important;
+    width: 320px;
+    height: 180px;
+}
+
+
+
+
 .home_box{
     padding: 80px 0 20px;
 }
@@ -432,6 +482,27 @@ body {
     padding: 20px;
     width: 100%;
 }
+.home_Col1_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col1_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col1_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
 .home_Col2{
     background-color: #0b0f17!important;
     color: #fff;
@@ -439,6 +510,27 @@ body {
     margin: 10px;
     padding: 20px;
     width: 100%;
+}
+.home_Col2_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col2_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col2_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
 }
 .home_Col3{
     background-color: #0b0f17!important;
@@ -448,10 +540,30 @@ body {
     padding: 20px;
     width: 100%;
 }
+.home_Col3_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col3_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col3_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
 .home_box2{
     padding: 80px 0 20px;
 }
-
 .home_Col4{
     background-color: #0b0f17!important;
     color: #fff;
@@ -459,6 +571,27 @@ body {
     margin: 10px;
     padding: 20px;
     width: 100%;
+}
+.home_Col4_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col4_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col4_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
 }
 .home_Col5{
     background-color: #0b0f17!important;
@@ -468,6 +601,27 @@ body {
     padding: 20px;
     width: 100%;
 }
+.home_Col5_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col5_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col5_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
 .home_Col6{
     background-color: #0b0f17!important;
     color: #fff;
@@ -475,6 +629,27 @@ body {
     margin: 10px;
     padding: 20px;
     width: 100%;
+}
+.home_Col6_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col6_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col6_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
 }
 
 .home_box3{
@@ -489,6 +664,27 @@ body {
     padding: 20px;
     width: 100%;
 }
+.home_Col7_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col7_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col7_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
 .home_Col8{
     background-color: #0b0f17!important;
     color: #fff;
@@ -496,6 +692,27 @@ body {
     margin: 10px;
     padding: 20px;
     width: 100%;
+}
+.home_Col8_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col8_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col8_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
 }
 .home_Col9{
     background-color: #0b0f17!important;
@@ -505,6 +722,36 @@ body {
     padding: 20px;
     width: 100%;
 }
+.home_Col9_frame{
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+    box-sizing: border-box;
+}
+.home_Col9_hading{
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+.home_Col9_paragraph{
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 
