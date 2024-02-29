@@ -78,7 +78,7 @@ const Home = () => {
           <h1>Brokers</h1>
         </div>
         <Row className='heder_img'>
-          <Col sm={{ span: 12 }} md={{ span: 9 }} lg={{ span: 7 }}>
+          <Col xs={24} sm={24} md={12} lg={9}>
             <div className='img2'>
               <img className='heder_img2' src={Group2} alt="img2" />
             </div>
@@ -86,7 +86,7 @@ const Home = () => {
         </Row>
         <div>
           <Row className='home_box'>
-            <Col className='home_Col1' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col1' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col1_frame'>
                 <img src={Frame} alt="frm1" width={58} height={78} />
               </div>
@@ -98,7 +98,7 @@ const Home = () => {
                   App. Post your Jobs from wherever you want. Home, Office, Car, you name it!...</p>
               </div>
             </Col>
-            <Col className='home_Col2' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col2' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col2_frame'>
                 <img src={Frame2} alt="frm2" width={58} height={78} />
               </div>
@@ -110,7 +110,7 @@ const Home = () => {
                   for you to post jobs, stay organized and enhance productivity</p>
               </div>
             </Col>
-            <Col className='home_Col3' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col3' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col3_frame'>
                 <img src={Frame3} alt="frm3" width={58} height={78} />
               </div>
@@ -133,7 +133,7 @@ const Home = () => {
           <h1>Dispatchers</h1>
         </div>
         <Row className='heder_img'>
-          <Col sm={{ span: 12 }} md={{ span: 9 }} lg={{ span: 7 }}>
+          <Col xs={24} sm={24} md={12} lg={9}>
             <div className='img2'>
               <img className='heder_img2' src={Group3} alt="img3" />
             </div>
@@ -141,7 +141,7 @@ const Home = () => {
         </Row>
         <div >
           <Row className='home_box2'>
-            <Col className='home_Col4' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col4' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col4_frame'>
                 <img src={Frame4} alt="frm4" width={58} height={78} />
               </div>
@@ -153,7 +153,7 @@ const Home = () => {
                   customizable job searching features will land you the right jobs by just a few clicks.</p>
               </div>
             </Col>
-            <Col className='home_Col5' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col5' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col5_frame'>
                 <img src={Frame5} alt="frm5" width={58} height={78} />
               </div>
@@ -165,7 +165,7 @@ const Home = () => {
                   efficient with handling multiple drivers at the same time...</p>
               </div>
             </Col>
-            <Col className='home_Col6' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col6' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col6_frame'>
                 <img src={Frame6} alt="frm6" width={58} height={78} />
               </div>
@@ -188,7 +188,7 @@ const Home = () => {
           <h1>Drivers</h1>
         </div>
         <Row className='heder_img'>
-          <Col sm={{ span: 12 }} md={{ span: 9 }} lg={{ span: 7 }}>
+          <Col xs={24} sm={24} md={12} lg={9}>
             <div className='img2'>
               <img className='heder_img2' src={Group4} alt="img4" />
             </div>
@@ -196,7 +196,7 @@ const Home = () => {
         </Row>
         <div>
           <Row className='home_box3'>
-            <Col className='home_Col7' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col7' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col7_frame'>
                 <img src={Frame7} alt="frm7" width={58} height={78} />
               </div>
@@ -208,7 +208,7 @@ const Home = () => {
                   network, where you are, and you will never miss a job! All you need to do is to turn your availability button on...</p>
               </div>
             </Col>
-            <Col className='home_Col8' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col8' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col8_frame'>
                 <img src={Frame8} alt="frm8" width={58} height={78} />
               </div>
@@ -220,7 +220,7 @@ const Home = () => {
                   hoping for your dispatcher to search through thousands of jobs, until they find you a gig. Search for jobs...</p>
               </div>
             </Col>
-            <Col className='home_Col9' sm={{ span: 12 }} md={{ span: 6 }} lg={{ span: 4 }}>
+            <Col className='home_Col9' xs={24} sm={24} md={12} lg={9}>
               <div className='home_Col9_frame'>
                 <img src={Frame9} alt="frm9" width={58} height={78} />
               </div>
