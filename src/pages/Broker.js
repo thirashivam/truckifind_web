@@ -59,17 +59,16 @@ function Broker() {
           <div className="tfd">
             <img src={tfd} alt="Logo" />
           </div>
-          <div className='logohader'>
+          {/* <div className='logohader'>
             <img src={Group} alt="Logo" />
-          </div>
+          </div> */}
         </Row>
       </div>
-      <div>
-        <div className='line3'>
-          <h1>Let’s create your profile</h1>
+        <div className='Broker_hadertext'>
+          <p>Let’s create your profile</p>
         </div>
-        <Row className='dispatcherfrom'>
-          <Box height={889} width={1226} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
+        <div className='Broker_haderrow'>
+        <Col className='Broker_from' sm={18}>
             <Row className='imgupload'>
               <div >
                 <Upload 
@@ -87,8 +86,8 @@ function Broker() {
                 <h3 className='ppbroker'>Profile Pic</h3>
               </div>
             </Row>
-            <Row >
-              <Col className='brokercol1' sm={8} >
+            <Row  className='broker_row1'>
+              <Col className='brokercol1' xs={24} sm={12} md={8} lg={7} >
                 <h3 className='brokertext1'>Broker Name</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -101,7 +100,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' sm={8}  >
+              <Col className='brokercol2' xs={24} sm={12} md={8} lg={7}  >
                 <h3 className='brokertext2'>Company Name</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -114,7 +113,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' xs={24} sm={12} md={8} lg={7}  >
                 <h3 className='brokertext3'>Company Code</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -128,8 +127,8 @@ function Broker() {
                 </Form.Item>
               </Col>
             </Row>
-            <Row >
-              <Col className='brokercol1' sm={8} > 
+            <Row className='broker_row2'>
+              <Col className='brokercol1' xs={24} sm={12} md={8} lg={7} > 
                 <h3 className='brokertext1'>MC#</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -142,7 +141,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' sm={8}  >
+              <Col className='brokercol2' xs={24} sm={12} md={8} lg={7}  >
                 <h3 className='brokertext2'>Phone Number</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -155,7 +154,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={8}  >
+              <Col className='brokercol3' xs={24} sm={12} md={8} lg={7}  >
                 <h3 className='brokertext3'>Email</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -169,8 +168,8 @@ function Broker() {
                 </Form.Item>
               </Col>
             </Row>
-            <Row >
-              <Col className='brokercol3' sm={8}  >
+            <Row className='broker_row3'>
+              <Col className='brokercol3' xs={24} sm={12} md={8} lg={7}  >
                 <h3 className='brokertext3'>Carrier Setup Link</h3>
                 <Form.Item  >
                   <Input className='driInput'
@@ -185,19 +184,18 @@ function Broker() {
               </Col>
             </Row>
             <Row className='brokerbutt1'>
-              <button className='brokerbuton1' type="submit" style={{ width: '40%' }}>Create my account</button>
+              <button className='brokerbuton1' type="submit" >Create my account</button>
             </Row>
-          </Box>
-        </Row>
+        </Col>
       </div>
-      <div>
+      {/* <div>
         <div className='endlinedri'>
           <img src={Line3} alt="line3" />
         </div>
         <div className='group5'>
           <img src={Group5} alt="group5" />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

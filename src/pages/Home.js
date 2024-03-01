@@ -68,15 +68,6 @@ const Home = () => {
         </Col>
       </Row>
 
-
-
-
-
-
-
-
-
-
       <div>
         <Row className='midline'>
           {/* <img src={Line2} alt="line2" /> */}
@@ -92,7 +83,7 @@ const Home = () => {
         </Row>
       </div>
       <div>
-        <div className='line3'>
+        <div className='dis1'>
           <h1>Brokers</h1>
         </div>
         <Row className='heder_img'>

@@ -12,8 +12,6 @@ import { useNavigate } from 'react-router-dom';
 // import PhoneInput from 'react-phone-number-input'
 // import { useState } from 'react'
 
-
-
 function Login() {
   const navigate = useNavigate();
   const goToUsertypePage = () => {
@@ -27,49 +25,53 @@ function Login() {
           <div className="tfd">
             <img src={tfd} alt="Logo" />
           </div>
-          <div className='logohader'>
+          {/* <div className='logohader'>
             <img src={Group} alt="Logo" />
-          </div>
+          </div> */}
         </Row>
       </div>
       <div>
-        <Row className='loginf'>
-          <Col className='loginfm' sm={{span: 12}} md={{span: 8}} >
-            <Box height={527} width={600} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
-              <div style={{ background: `url(${LoginFrame})` }}>
+
+
+
+
+        <Row className='login_from'>
+          <Col className='login_fromcol' sm={12} md={12}  >
+            <div style={{background: `url(${LoginFrame})`}}>
+            <div className='login_textfrom1'>
                 <div className='logintext'>
-                  <h1>Login !</h1>
+                  <p>Login !</p>
                   <Form.Item  >
-                  <Input className='driInput'
-                    style={{
-                      width: '80%',
-                      border: 'none',
-                      color: '#FFFFFF',
-                      backgroundColor: '#112535',
-                    }}
+                  <Input className='login_inputbox'
                     placeholder="Mobile number"
                   />
                   </Form.Item>
-                  <button onClick={goToUsertypePage} className='loginbutton' type="submit" style={{ width: '80%' }}>Login</button>
+                  <button onClick={goToUsertypePage} className='login_button' type="submit">Login</button>
                 </div>
-              </div>
-            </Box>
+                </div>
+                </div>
           </Col>
-          <Col sm={{span: 12}} md={{span: 8}} >
-            <div >
+          <Col lg={6}  >
+            <div className='login_Imagebackground'>
               <img src={Grouplp} alt='loginpage' />
             </div>
           </Col>
         </Row>
+
+
+
+
+
+
       </div>
-      <div>
+      {/* <div>
         <div className='endline'>
           <img src={Line3} alt="line3" />
         </div>
         <div className='group5'>
           <img src={Group5} alt="group5" />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
