@@ -88,24 +88,23 @@ function Dispatcher() {
           <div className="tfd">
             <img src={tfd} alt="Logo" />
           </div>
-          <div className='logohader'>
+          {/* <div className='logohader'>
             <img src={Group} alt="Logo" />
-          </div>
+          </div> */}
         </Row>
       </div>
       <div>
-        <div className='line3'>
-          <h1>Let’s create your profile</h1>
+        <div className='dispatcher_text'>
+          <p>Let’s create your profile</p>
         </div>
-        <Row className='dispatcherfrom'>
-          <Col  sm={{span: 24}} md={{span: 8}}>
-          <Box height={1873} width={1226} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
+        <div className='dispatcher_from'>
+          <Col className='dispatcher_hadercol'  sm={18} >
             <div className='textDriver'>
               <h1>Personal</h1>
             </div>
-            <div className='brokerline'>
+            {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
-            </div>
+            </div> */}
             <Row className='driverrow1'>
               <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Name</h3>
@@ -216,9 +215,9 @@ function Dispatcher() {
             <div className='textDriver'>
               <h1>Company</h1>
             </div>
-            <div className='brokerline'>
+            {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
-            </div>
+            </div> */}
             <Row className='driverrow3'>
               <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Company MC#</h3>
@@ -239,9 +238,9 @@ function Dispatcher() {
                 <h1>Vehicle</h1>
               </div>
             </Row>
-            <div className='brokerline'>
+            {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
-            </div>
+            </div> */}
             <Row className='driverrow3'>
               <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
                 <h3 className='brokertext3'>Truck Type</h3>
@@ -389,21 +388,20 @@ function Dispatcher() {
                 </div>
               </Col>
             </Row>
-            <Row className='brokerbutt1'>
-              <button className='brokerbuton1' type="submit" style={{ width: '40%' }}>Create my account</button>
+            <Row className='Dispatcher_button'>
+              <button className='Dispatcher_button1' type="submit" >Create my account</button>
             </Row>
-          </Box>
           </Col>
-        </Row>
+        </div>
       </div>
-      <div>
+      {/* <div>
         <div className='endlinedri'>
           <img src={Line3} alt="line3" />
         </div>
         <div className='group5'>
           <img src={Group5} alt="group5" />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

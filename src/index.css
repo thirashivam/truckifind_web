@@ -1278,9 +1278,46 @@ body {
     font-weight: 700;
     line-height: normal;
 }
-
-
-
+.dispatcher_text{
+    color: #dadada;
+    font-size: 3.2rem;
+    margin: 0px 0px -53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dispatcher_from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.dispatcher_hadercol{
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px 25px;
+    background-color: rgb(11, 15, 23);
+}
+.Dispatcher_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.Dispatcher_button1{
+    border: none;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
+    background: linear-gradient(89.35deg, rgb(16, 98, 161) 2.37%, rgb(34, 159, 255) 105.12%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
 
