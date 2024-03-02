@@ -33,16 +33,6 @@ const beforeUpload = (file) => {
 
 function Dispatcher() {
 
-  const [selectedButtons, setSelectedButtons] = useState([]);
-
-  const handleButtonClick = (value) => {
-    if (selectedButtons.includes(value)) {
-      setSelectedButtons(selectedButtons.filter(item => item !== value));
-    } else {
-      setSelectedButtons([...selectedButtons, value]);
-    }
-  };
-
 
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState();
@@ -93,136 +83,113 @@ function Dispatcher() {
           </div> */}
         </Row>
       </div>
-      <div>
+      <div className='Dispatcher_Haderfrom'>
         <div className='dispatcher_text'>
           <p>Let’s create your profile</p>
         </div>
         <div className='dispatcher_from'>
-          <Col className='dispatcher_hadercol'  sm={18} >
-            <div className='textDriver'>
-              <h1>Personal</h1>
+          <Col className='dispatcher_hadercol' sm={18} >
+            <div className='text_Dispatcher'>
+              <p>Personal</p>
             </div>
             {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
             </div> */}
-            <Row className='driverrow1'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Name</h3>
-                <Form.Item  >
-                  <Input className='driInput'
-                    style={{
-                      border: 'none',
-                      color: '#FFFFFF',
-                      backgroundColor: '#112535',
-                    }}
-                    placeholder="Your name"
-                  />
-                </Form.Item>
-              </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Do you have a TSA Card?</h3>
-                <div className='buttonDis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('1') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('1')}
-                  >
-                    yes
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('2') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('2')}
-                  >
-                    No
-                  </Button>
+            <Row className='Dispatcher_Row1'>
+              <Col className='Dispatcher_Col1' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum1'>
+                  <p className='Dispatcher_col_hading1'>Name</p>
+                  <Form.Item  >
+                    <Input className='dispatcher_Input1'
+                      style={{
+                        border: 'none',
+                        color: '#FFFFFF',
+                        backgroundColor: '#112535',
+                      }}
+                      placeholder="Your name"
+                    />
+                  </Form.Item>
                 </div>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Do you have TWIC?</h3>
-                <div className='buttonDis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('3') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('3')}
-                  >
-                    yes
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('4') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('4')}
-                  >
-                    No
-                  </Button>
+              <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum2'>
+                  <p className='Dispatcher_col_hading2'>Do you have a TSA Card?</p>
+                  <div className='dispatcher_buttoncol1'>
+                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
+                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                  </div>
+                </div>
+              </Col>
+              <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum2'>
+                  <p className='Dispatcher_col_hading2'>Do you have TWIC?</p>
+                  <div className='dispatcher_buttoncol1'>
+                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
+                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                  </div>
                 </div>
               </Col>
             </Row>
-            <Row className='driverrow2'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Are you HAZMAT Certified?</h3>
-                <div className='buttonDis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('5') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('5')}
-                  >
-                    yes
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('6') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('6')}
-                  >
-                    No
-                  </Button>
+            <Row>
+              <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum2'>
+                  <p className='Dispatcher_col_hading2'>Are you HAZMAT Certified?</p>
+                  <div className='dispatcher_buttoncol1'>
+                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
+                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                  </div>
                 </div>
+              </Col>
+            </Row>
+            <Row className='Dispatcher_Imagetext'>
+              <p className='Dispatcher_Imagetexthad'>Upload your Driver’s  License</p>
+            </Row>
+            <Row className='Dispatcher_Imagerow'>
+              <Col className='Dispatcher_ImageCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Imagetext1'>Front</p>
+                <Upload
+                  name="avatar"
+                  listType="picture-card"
+                  className="avatar-uploader"
+                  showUploadList={false}
+                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
+                  beforeUpload={beforeUpload}
+                  onChange={handleChange}
+                >
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                </Upload>
+              </Col>
+              <Col className='Dispatcher_ImageCol2' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Imagetext2'>Back</p>
+                <Upload
+                  name="avatar"
+                  listType="picture-card"
+                  className="avatar-uploader"
+                  showUploadList={false}
+                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
+                  beforeUpload={beforeUpload}
+                  onChange={handleChange}
+                >
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                </Upload>
               </Col>
             </Row>
 
-            <Row className='driverrow8'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Upload your Driver’s  License</h3><br />
-                <h3 className='brokertext3'>Front</h3>
-                <Upload
-                  name="avatar"
-                  listType="picture-card"
-                  className="avatar-uploader"
-                  showUploadList={false}
-                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
-                  beforeUpload={beforeUpload}
-                  onChange={handleChange}
-                >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
-                </Upload>
-              </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>...</h3><br />
-                <h3 className='brokertext3'>Back</h3>
-                <Upload
-                  name="avatar"
-                  listType="picture-card"
-                  className="avatar-uploader"
-                  showUploadList={false}
-                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
-                  beforeUpload={beforeUpload}
-                  onChange={handleChange}
-                >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
-                </Upload>
-              </Col>
-            </Row>
-            <div className='textDriver'>
-              <h1>Company</h1>
+
+
+
+
+            <div className='text_Dispatcher1'>
+              <p>Company</p>
             </div>
             {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
             </div> */}
-            <Row className='driverrow3'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Company MC#</h3>
+            <Row className='Dispatcher_CompanyRow'>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>Company MC#</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -233,19 +200,25 @@ function Dispatcher() {
                 </Form.Item>
               </Col>
             </Row>
-            <Row >
-              <div className='textDriver'>
-                <h1>Vehicle</h1>
-              </div>
-            </Row>
+
+
+
+
+
+
+
+
+            <div className='text_Dispatcher2'>
+              <p>Vehicle</p>
+            </div>
             {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
             </div> */}
-            <Row className='driverrow3'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Truck Type</h3>
+            <Row className='Dispatcher_VehicalRow'>
+              <Col className='Dispatcher_VehicalCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Vehicaltext1'>Truck Type</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_VehicalInput1'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -255,28 +228,24 @@ function Dispatcher() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <div className='weight_dis'>
-                <h3 className='brokertext3'>Truck Size</h3>
+              <Col className='Dispatcher_VehicalCol2' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Vehicaltext2'>Truck Size</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_VehicalInput2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
                     placeholder="Enter size"
-                    
                   />
-                  <span class="weight_count">feet</span>
+                  <span class="Vehical_weight_count">feet</span>
                 </Form.Item>
-                </div>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-              <div className='weight_dis'>
-                <h3 className='brokertext3'>Truck Height</h3>
+              <Col className='Dispatcher_VehicalCol2' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Vehicaltext2'>Truck Height</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_VehicalInput2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -284,17 +253,13 @@ function Dispatcher() {
                     }}
                     placeholder="Enter height"
                   />
-                  <span class="weight_count">feet</span>
+                  <span class="Vehical_weight_count">feet</span>
                 </Form.Item>
-                </div>
               </Col>
-            </Row>
-            <Row className='driverrow3'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-              <div className='weight_dis'>
-                <h3 className='brokertext3'>Truck Width</h3>
+              <Col className='Dispatcher_VehicalCol2' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Vehicaltext2'>Truck Width</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_VehicalInput2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -302,15 +267,13 @@ function Dispatcher() {
                     }}
                     placeholder="Enter weight"
                   />
-                  <span class="weight_count">feet</span>
+                  <span class="Vehical_weight_count">feet</span>
                 </Form.Item>
-                </div>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-              <div className='weight_dis'>
-                <h3 className='brokertext3'>Door Height</h3>
+              <Col className='Dispatcher_VehicalCol2' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Vehicaltext2'>Door Height</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_VehicalInput2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -318,15 +281,13 @@ function Dispatcher() {
                     }}
                     placeholder="Enter height"
                   />
-                  <span class="weight_count">feet</span>
+                  <span class="Vehical_weight_count">feet</span>
                 </Form.Item>
-                </div>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-              <div className='weight_dis'>
-                <h3 className='brokertext3'>Truck Max Capacity</h3>
+              <Col className='Dispatcher_VehicalCol2' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Vehicaltext2'>Truck Max Capacity</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_VehicalInput2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -334,62 +295,42 @@ function Dispatcher() {
                     }}
                     placeholder="Enter capacity"
                   />
-                  <span class="weight_count">lbs</span>
+                  <span class="Vehical_weight_count">lbs</span>
                 </Form.Item>
-                </div>
               </Col>
             </Row>
-            <Row className='driverrow2'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Accessories</h3>
-                <div className='buttondis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('a') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('a')}
-                  >
-                    Pallet Jack
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('b') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('b')}
-                  >
-                    Lift Gate
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('c') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('c')}
-                  >
-                    Straps
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('d') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('d')}
-                  >
-                    Blankets/Pads
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('e') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('e')}
-                  >
-                    Trucks
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('f') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('f')}
-                  >
-                    Other
-                  </Button>
-                </div>
-              </Col>
+
+
+            <Row className='Dispatcher_AccessoriesRow'>
+              <p className='Dispatcher_AccessoriesText1'>Accessories</p>
             </Row>
+            <Row className='Dispatcher_Accessoriesbutton'>
+              <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4} >
+                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Pallet Jack</button>
+              </Col>
+              <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4} >
+                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Lift Gate</button>
+              </Col>
+              <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4}>
+                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Straps</button>
+              </Col>
+              <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4}>
+                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Blankets/Pads</button>
+              </Col>
+              <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4} >
+                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Trucks</button>
+              </Col>
+              <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4}  >
+                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Other</button>
+              </Col>
+              </Row>
+
+
+
+
+
             <Row className='Dispatcher_button'>
-              <button className='Dispatcher_button1' type="submit" >Create my account</button>
+              <button className='Dispatcher_Summitbutton' type="submit" >Create my account</button>
             </Row>
           </Col>
         </div>

@@ -1090,14 +1090,14 @@ body {
   }
   
   .driInput {
-    background: #010507;
-    background: radial-gradient(circle,#010507 0,#020d14 86%);
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    width: 100%;
-    border-radius: 10px;
+    background: #112535;
+    border-color: rgba(93,94,96,.7);
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 1.4rem 1rem 1.4rem 60px;
+    padding-left: 10px!important;
+    padding: 1.2rem 1rem;
+    width: 80%;
   }
   
   .login_button {
@@ -1145,7 +1145,7 @@ body {
 
 
 .login_inputbox{
-    background: #010507;
+    background: #112535;
     background: radial-gradient(circle,#010507 0,#020d14 86%);
     color: #fff!important;
     font-family: Poppins,sans-serif;
@@ -1157,7 +1157,7 @@ body {
 }
 .login_inputbox::placeholder {
     color: #FFFFFF;
-    font-size: 15px;
+    font: 0.75rem sans-serif;
 }
 .User_text{
     text-align: center;
@@ -1278,6 +1278,9 @@ body {
     font-weight: 700;
     line-height: normal;
 }
+.Dispatcher_Haderfrom{
+
+}
 .dispatcher_text{
     color: #dadada;
     font-size: 3.2rem;
@@ -1316,8 +1319,368 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+    width: 40%;
     line-height: normal;
 }
+
+.text_Dispatcher{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+
+.Dispatcher_Row1{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_Col1{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.dispatcher_colum1{
+    position: relative;
+    margin-bottom: 20px;
+}
+.Dispatcher_col_hading1{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 15px 4px;
+    text-align: left;
+}
+.dispatcher_Input1{
+    background: #112535;
+    border-color: rgba(93,94,96,.7);
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 1.4rem 1rem 1.4rem 60px;
+    padding-left: 10px!important;
+    padding: 1.2rem 1rem;
+    width: 80%;
+}
+.Dispatcher_Col2{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.dispatcher_colum2{
+    position: relative;
+    margin-bottom: 20px;
+}
+.Dispatcher_col_hading2{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 15px 4px;
+    text-align: left;
+}
+.dispatcher_buttoncol1{
+    justify-content: space-between;
+    width: 90%;
+}
+.Dispatcher_button1{
+    border: 1px solid rgb(34, 159, 255);
+    border-radius: 24px;
+    box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
+    background: rgb(17, 37, 53);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    overflow: hidden;
+    width: 25%;
+    padding: 16px 2px !important;
+}
+.Dispatcher_button2{
+    border: 1px solid rgb(34, 159, 255);
+    border-radius: 24px;
+    box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
+    background: rgb(17, 37, 53);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    overflow: hidden;
+    width: 25%;
+    padding: 16px 2px !important;
+}
+.Dispatcher_Imagetext{
+    padding: 40px 0px 20px;
+}
+.Dispatcher_Imagetexthad{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#dadada;
+}
+.Dispatcher_Imagerow{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+.Dispatcher_Imagetext1{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.Dispatcher_Imagetext2{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+.Dispatcher_Imagetext{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_Imagerow{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.text_Dispatcher1{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_CompanyRow{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_CompanyCol1{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_Companytext{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 15px 4px;
+    text-align: left;
+}
+.dispatcher_Input2{
+    background: #112535;
+    border-color: rgba(93,94,96,.7);
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 1.4rem 1rem 1.4rem 60px;
+    padding-left: 10px!important;
+    padding: 1.2rem 1rem;
+    width: 80%;
+}
+
+.text_Dispatcher2{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_VehicalRow{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_VehicalCol1{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_Vehicaltext1{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 15px 4px;
+    text-align: left;
+}
+.dispatcher_VehicalInput1{
+    background: #112535;
+    border-color: rgba(93,94,96,.7);
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 1.4rem 1rem 1.4rem 60px;
+    padding-left: 10px!important;
+    padding: 1.2rem 1rem;
+    width: 80%;
+}
+.Dispatcher_VehicalCol2{
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
+}
+.Dispatcher_Vehicaltext2{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 15px 4px;
+    text-align: left;
+}
+.dispatcher_VehicalInput2{
+    background: #112535;
+    border-color: rgba(93,94,96,.7);
+    border-radius: 25px;
+    font-weight: 600;
+    padding: 1.4rem 1rem 1.4rem 60px;
+    padding-left: 10px!important;
+    padding: 1.2rem 1rem;
+    width: 80%;
+}
+.Vehical_weight_count {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    right: 115px;
+    top: 19px;
+}
+
+.Dispatcher_AccessoriesRow{
+
+}
+.Dispatcher_AccessoriesText1{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 15px 4px;
+    text-align: left;
+    color: #fff;
+}
+.Dispatcher_Accessoriesbutton{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(var(--bs-gutter-x)*-.5);
+    margin-top: calc(var(--bs-gutter-y)*-1);
+}
+.Dispatcher_Accessoriesbutton1{
+    border: 1px solid rgba(93, 94, 96, 0.698);
+    border-radius: 24px;
+    box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
+    background: rgb(17, 37, 53);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 80%;
+    padding: 16px 2px !important;
+}
+.Dispatcher_asButton1{
+    margin-bottom: 25px;
+}
+.Dispatcher_Summitbutton{
+    border: 1px solid rgb(34, 159, 255);
+    border-radius: 24px;
+    box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
+    background: rgb(17, 37, 53);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    overflow: hidden;
+    width: 65%;
+    padding: 16px 2px !important;
+}
+.dispatcher_Input1::placeholder {
+    color: #FFFFFF;
+    font: 0.75rem sans-serif;
+}
+.dispatcher_Input2::placeholder {
+    color: #FFFFFF;
+    font: 0.75rem sans-serif;
+}
+.dispatcher_VehicalInput2::placeholder {
+    color: #FFFFFF;
+    font: 0.75rem sans-serif;
+}
+.dispatcher_VehicalInput1::placeholder {
+    color: #FFFFFF;
+    font: 0.75rem sans-serif;
+}
+
+
+
+
+
 
 
 
@@ -1438,17 +1801,10 @@ body {
 
 .driInput::placeholder {
     color: #FFFFFF;
-    font-size: 15px;
+    font: 0.75rem sans-serif;
 }
 
-.weight_count {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    position: absolute;
-    right: 9px;
-    top: 5px;
-}
+
 
 .weight_dis {
     position: relative;

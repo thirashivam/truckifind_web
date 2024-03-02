@@ -6,10 +6,10 @@ import Line3 from '../photo/Line3.png'
 import Group5 from '../photo/Group5.png'
 import { Box } from '@mui/material'
 import Line16 from '../photo/Line16.png'
+
 import { useState } from 'react'
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
-
 
 
 
@@ -30,18 +30,8 @@ const beforeUpload = (file) => {
   return isJpgOrPng && isLt2M;
 };
 
+
 function Driver() {
-
-  const [selectedButtons, setSelectedButtons] = useState([]);
-
-  const handleButtonClick = (value) => {
-    if (selectedButtons.includes(value)) {
-      setSelectedButtons(selectedButtons.filter(item => item !== value));
-    } else {
-      setSelectedButtons([...selectedButtons, value]);
-    }
-  };
-
 
 
   const [loading, setLoading] = useState(false);
@@ -78,6 +68,9 @@ function Driver() {
   );
 
 
+
+
+
   return (
     <>
       <div>
@@ -85,111 +78,86 @@ function Driver() {
           <div className="tfd">
             <img src={tfd} alt="Logo" />
           </div>
-          <div className='logohader'>
+          {/* <div className='logohader'>
             <img src={Group} alt="Logo" />
-          </div>
+          </div> */}
         </Row>
       </div>
-      <div>
-        <div className='line3'>
-          <h1>Let’s create your profile</h1>
+      <div className='Dispatcher_Haderfrom'>
+        <div className='dispatcher_text'>
+          <p>Let’s create your profile</p>
         </div>
-        
-          <Box height={2150} width={1226} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
-          <Row className='dispatcherfrom'>
-        <Col  sm={{span: 24}} md={{span: 8}}>
-            <div className='textDriver'>
-              {/* <h1>Personal</h1> */}
-              <label className='driver_level'>Personal</label>
+        <div className='dispatcher_from'>
+          <Col className='dispatcher_hadercol' sm={18} >
+            <div className='text_Dispatcher'>
+              <p>Personal</p>
             </div>
-            <div className='brokerline'>
+            {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
-            </div>
-            <Row className='driverrow1'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Name</h3>
-                <Form.Item  >
-                  <Input className='driInput'
-                    style={{
-                      border: 'none',
-                      color: '#FFFFFF',
-                      backgroundColor: '#112535',
-                    }}
-                    placeholder="Your name"
-                  />
-                </Form.Item>
-              </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Do you have a TSA Card?</h3>
-                <div className='buttonDis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('1') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('1')}
-                  >
-                    yes
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('2') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('2')}
-                  >
-                    No
-                  </Button>
+            </div> */}
+            <Row className='Dispatcher_Row1'>
+              <Col className='Dispatcher_Col1' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum1'>
+                  <p className='Dispatcher_col_hading1'>Name</p>
+                  <Form.Item  >
+                    <Input className='dispatcher_Input1'
+                      style={{
+                        border: 'none',
+                        color: '#FFFFFF',
+                        backgroundColor: '#112535',
+                      }}
+                      placeholder="Your name"
+                    />
+                  </Form.Item>
                 </div>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Do you have TWIC?</h3>
-                <div className='buttonDis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('3') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('3')}
-                  >
-                    yes
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('4') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('4')}
-                  >
-                    No
-                  </Button>
+              <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum2'>
+                  <p className='Dispatcher_col_hading2'>Do you have a TSA Card?</p>
+                  <div className='dispatcher_buttoncol1'>
+                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
+                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                  </div>
+                </div>
+              </Col>
+              <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum2'>
+                  <p className='Dispatcher_col_hading2'>Do you have TWIC?</p>
+                  <div className='dispatcher_buttoncol1'>
+                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
+                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                  </div>
                 </div>
               </Col>
             </Row>
-            <Row className='driverrow2'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Are you HAZMAT Certified?</h3>
-                <div className='buttonDis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('5') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('5')}
-                  >
-                    yes
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('6') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('6')}
-                  >
-                    No
-                  </Button>
+            <Row>
+              <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum2'>
+                  <p className='Dispatcher_col_hading2'>Are you HAZMAT Certified?</p>
+                  <div className='dispatcher_buttoncol1'>
+                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
+                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                  </div>
                 </div>
               </Col>
             </Row>
-            <div className='textDriver'>
-              <h1>Company</h1>
+
+
+
+
+
+
+            <div className='text_Dispatcher1'>
+              <p>Company</p>
             </div>
-            <div className='brokerline'>
+            {/* <div className='brokerline'>
               <img src={Line16} alt="line2" />
-            </div>
-            <Row className='driverrow3'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Company Name</h3>
+            </div> */}
+            <Row className='Dispatcher_CompanyRow'>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>Company Name</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -200,90 +168,94 @@ function Driver() {
                 </Form.Item>
               </Col>
             </Row>
-            <Row className='driveraddress'>
-              <Col>
-                <h3 className='textDriver'>Company Address</h3><br />
+
+            <Row className='Dispatcher_CompanyRow'>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>Company Address</p>
               </Col>
             </Row>
-            <Row className='driverrow4'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}} >
+            <Row className='Dispatcher_CompanyRow'>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Address line 1"
+                    placeholder="Your company name"
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Address line 2"
+                    placeholder="Your company name"
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="City"
-                  />
-                </Form.Item>
-              </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <Form.Item  >
-                  <Input className='driInput'
-                    style={{
-                      border: 'none',
-                      color: '#FFFFFF',
-                      backgroundColor: '#112535',
-                    }}
-                    placeholder="State / Province"
-                  />
-                </Form.Item>
-              </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <Form.Item  >
-                  <Input className='driInput'
-                    style={{
-                      border: 'none',
-                      color: '#FFFFFF',
-                      backgroundColor: '#112535',
-                    }}
-                    placeholder="Postal code"
-                  />
-                </Form.Item>
-              </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <Form.Item  >
-                  <Input className='driInput'
-                    style={{
-                      border: 'none',
-                      color: '#FFFFFF',
-                      backgroundColor: '#112535',
-                    }}
-                    placeholder="Country"
+                    placeholder="Your company name"
                   />
                 </Form.Item>
               </Col>
             </Row>
-            <Row className='driverrow5'>
-              <Col className='brokercol1' sm={{span: 12}} md={{span: 8}} >
-                <h3 className='brokertext1'>MC#</h3>
+            <Row className='Dispatcher_CompanyRow'>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
+                    style={{
+                      border: 'none',
+                      color: '#FFFFFF',
+                      backgroundColor: '#112535',
+                    }}
+                    placeholder="Your company name"
+                  />
+                </Form.Item>
+              </Col>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <Form.Item  >
+                  <Input className='dispatcher_Input2'
+                    style={{
+                      border: 'none',
+                      color: '#FFFFFF',
+                      backgroundColor: '#112535',
+                    }}
+                    placeholder="Your company name"
+                  />
+                </Form.Item>
+              </Col>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <Form.Item  >
+                  <Input className='dispatcher_Input2'
+                    style={{
+                      border: 'none',
+                      color: '#FFFFFF',
+                      backgroundColor: '#112535',
+                    }}
+                    placeholder="Your company name"
+                  />
+                </Form.Item>
+              </Col>
+            </Row>
+
+            <Row className='Dispatcher_CompanyRow'>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>MC#</p>
+                <Form.Item  >
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -293,10 +265,10 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext2'>DOT#</h3>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>DOT#</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -306,10 +278,10 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Email</h3>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>Email</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -320,11 +292,12 @@ function Driver() {
                 </Form.Item>
               </Col>
             </Row>
-            <Row className='driverrow6'>
-              <Col className='brokercol1' sm={{span: 12}} md={{span: 8}} >
-                <h3 className='brokertext1'>Phone#</h3>
+
+            <Row className='Dispatcher_CompanyRow'>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>Phone#</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
@@ -334,99 +307,96 @@ function Driver() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext2'>Dispatcher Phone#</h3>
+              <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Companytext'>Dispatcher Phone#</p>
                 <Form.Item  >
-                  <Input className='driInput'
+                  <Input className='dispatcher_Input2'
                     style={{
                       border: 'none',
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Dispatcher Phone#"
+                    placeholder="Dispatcher phone#"
                   />
                 </Form.Item>
               </Col>
             </Row>
-            <Row >
-              <div className='textDriver'>
-                <h1>Vehicle</h1>
-              </div>
-            </Row>
-            <div className='brokerline'>
-              <img src={Line16} alt="line2" />
+
+
+
+
+
+
+
+
+            <div className='text_Dispatcher2'>
+              <p>Vehicle</p>
             </div>
-            <Row className='driverrow7'>
-              <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                <h3 className='brokertext3'>Do you want to register yourself as a Driver too?</h3>
-                <div className='buttonDis1'>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('1') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('1')}
-                  >
-                    yes
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: '#112535', color: 'white' }}
-                    type={selectedButtons.includes('2') ? 'primary' : 'default'}
-                    onClick={() => handleButtonClick('2')}
-                  >
-                    No
-                  </Button>
+            {/* <div className='brokerline'>
+              <img src={Line16} alt="line2" />
+            </div> */}
+            <Row>
+            <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+              <div className='dispatcher_colum2'>
+                <p className='Dispatcher_col_hading2'>Do you want to register yourself as a Driver too?</p>
+                <div className='dispatcher_buttoncol1'>
+                  <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
+                  <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
                 </div>
+              </div>
+            </Col>
+            </Row>
+            <Row className='Dispatcher_Imagetext'>
+              <p className='Dispatcher_Imagetexthad'>Upload your Driver’s  License</p>
+            </Row>
+            <Row className='Dispatcher_Imagerow'>
+              <Col className='Dispatcher_ImageCol1' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Imagetext1'>Front</p>
+                <Upload
+                  name="avatar"
+                  listType="picture-card"
+                  className="avatar-uploader"
+                  showUploadList={false}
+                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
+                  beforeUpload={beforeUpload}
+                  onChange={handleChange}
+                >
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                </Upload>
+              </Col>
+              <Col className='Dispatcher_ImageCol2' xs={24} sm={12} md={8} lg={8}  >
+                <p className='Dispatcher_Imagetext2'>Back</p>
+                <Upload
+                  name="avatar"
+                  listType="picture-card"
+                  className="avatar-uploader"
+                  showUploadList={false}
+                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
+                  beforeUpload={beforeUpload}
+                  onChange={handleChange}
+                >
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                </Upload>
               </Col>
             </Row>
-            <div >
-              <Row className='driverrow8'>
-                <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                  <h3 className='brokertext3'>Upload your Driver’s  License</h3><br />
-                  <h3 className='brokertext3'>Front</h3>
-                  <Upload
-                    name="avatar"
-                    listType="picture-card"
-                    className="avatar-uploader"
-                    showUploadList={false}
-                    action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
-                    beforeUpload={beforeUpload}
-                    onChange={handleChange}
-                  >
-                    {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', height: '300px', }} />) : (uploadButton)}
-                  </Upload>
-                </Col>
-                <Col className='brokercol3' sm={{span: 12}} md={{span: 8}}  >
-                  <h3 className='brokertext3'>...</h3><br />
-                  <h3 className='brokertext3'>Back</h3>
-                  <Upload
-                    name="avatar"
-                    listType="picture-card"
-                    className="avatar-uploader"
-                    showUploadList={false}
-                    action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
-                    beforeUpload={beforeUpload}
-                    onChange={handleChange}
-                  >
-                    {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', height: '300px', }} />) : (uploadButton)}
-                  </Upload>
-                </Col>
-              </Row>
-            </div>
-            <Row className='brokerbutt1'>
-              <button className='brokerbuton1' type="submit" style={{ width: '40%' }}>Create my account</button>
+
+
+
+
+            <Row className='Dispatcher_button'>
+              <button className='Dispatcher_Summitbutton' type="submit" >Create my account</button>
             </Row>
-            </Col>
-        </Row>
-          </Box>
-          
+          </Col>
+        </div>
       </div>
-      <div>
+      {/* <div>
         <div className='endlinedri'>
           <img src={Line3} alt="line3" />
         </div>
-        <div className='groupdriver'>
+        <div className='group5'>
           <img src={Group5} alt="group5" />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
