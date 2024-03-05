@@ -2,16 +2,11 @@ import React from 'react'
 import { Row, Form, Input, Col, Button } from 'antd'
 import tfd from '../photo/tfd.png'
 import Group from '../photo/Group.png'
-import Line3 from '../photo/Line3.png'
-import Group5 from '../photo/Group5.png'
-import { Box } from '@mui/material'
 import Line16 from '../photo/Line16.png'
-
 import { useState } from 'react'
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
-
-
+import { useNavigate } from 'react-router-dom';
 
 const getBase64 = (img, callback) => {
   const reader = new FileReader();
@@ -30,9 +25,7 @@ const beforeUpload = (file) => {
   return isJpgOrPng && isLt2M;
 };
 
-
 function Driver() {
-
 
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState();
@@ -59,23 +52,40 @@ function Driver() {
       {loading ? <LoadingOutlined /> : <PlusOutlined />}
       <div
         style={{
-          marginTop: 25,
+          marginTop: 8,
         }}
       >
         Upload
       </div>
     </button>
   );
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/');
+  };
 
-
-
-
+  const [clickedButton, setClickedButton] = useState(null);
+  const handleClickButton = (clickedName) => {
+    setClickedButton(clickedName);
+  };
+  const [clickedButton2, setClickedButton2] = useState(null);
+  const handleClickButton2 = (clickedName) => {
+    setClickedButton2(clickedName);
+  };
+  const [clickedButton3, setClickedButton3] = useState(null);
+  const handleClickButton3 = (clickedName) => {
+    setClickedButton3(clickedName);
+  };
+  const [clickedButton4, setClickedButton4] = useState(null);
+  const handleClickButton4 = (clickedName) => {
+    setClickedButton4(clickedName);
+  };
 
   return (
     <>
       <div>
         <Row className='had'>
-          <div className="tfd">
+          <div className="tfd" onClick={handleClick}>
             <img src={tfd} alt="Logo" />
           </div>
           {/* <div className='logohader'>
@@ -115,8 +125,8 @@ function Driver() {
                 <div className='dispatcher_colum2'>
                   <p className='Dispatcher_col_hading2'>Do you have a TSA Card?</p>
                   <div className='dispatcher_buttoncol1'>
-                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
-                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                    <button className={`Dispatcher_button1 ${clickedButton === "TSA_Yes" ? "clicked" : ""}`} onClick={() => handleClickButton("TSA_Yes")}>Yes</button>
+                    <button className={`Dispatcher_button1 ${clickedButton === "TSA_No" ? "clicked" : ""}`} onClick={() => handleClickButton("TSA_No")}>No</button>
                   </div>
                 </div>
               </Col>
@@ -124,8 +134,8 @@ function Driver() {
                 <div className='dispatcher_colum2'>
                   <p className='Dispatcher_col_hading2'>Do you have TWIC?</p>
                   <div className='dispatcher_buttoncol1'>
-                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
-                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                    <button className={`Dispatcher_button1 ${clickedButton2 === "TWIC_Yes" ? "clicked" : ""}`} onClick={() => handleClickButton2("TWIC_Yes")}>Yes</button>
+                    <button className={`Dispatcher_button1 ${clickedButton2 === "TWIC_No" ? "clicked" : ""}`} onClick={() => handleClickButton2("TWIC_No")}>No</button>
                   </div>
                 </div>
               </Col>
@@ -135,18 +145,12 @@ function Driver() {
                 <div className='dispatcher_colum2'>
                   <p className='Dispatcher_col_hading2'>Are you HAZMAT Certified?</p>
                   <div className='dispatcher_buttoncol1'>
-                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
-                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                    <button className={`Dispatcher_button1 ${clickedButton3 === "HAZ_Yes" ? "clicked" : ""}`} onClick={() => handleClickButton3("HAZ_Yes")}>Yes</button>
+                    <button className={`Dispatcher_button1 ${clickedButton3 === "HAZ_No" ? "clicked" : ""}`} onClick={() => handleClickButton3("HAZ_No")}>No</button>
                   </div>
                 </div>
               </Col>
             </Row>
-
-
-
-
-
-
             <div className='text_Dispatcher1'>
               <p>Company</p>
             </div>
@@ -168,7 +172,6 @@ function Driver() {
                 </Form.Item>
               </Col>
             </Row>
-
             <Row className='Dispatcher_CompanyRow'>
               <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
                 <p className='Dispatcher_Companytext'>Company Address</p>
@@ -250,7 +253,6 @@ function Driver() {
                 </Form.Item>
               </Col>
             </Row>
-
             <Row className='Dispatcher_CompanyRow'>
               <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
                 <p className='Dispatcher_Companytext'>MC#</p>
@@ -292,7 +294,6 @@ function Driver() {
                 </Form.Item>
               </Col>
             </Row>
-
             <Row className='Dispatcher_CompanyRow'>
               <Col className='Dispatcher_CompanyCol1' xs={24} sm={12} md={8} lg={8}  >
                 <p className='Dispatcher_Companytext'>Phone#</p>
@@ -321,14 +322,6 @@ function Driver() {
                 </Form.Item>
               </Col>
             </Row>
-
-
-
-
-
-
-
-
             <div className='text_Dispatcher2'>
               <p>Vehicle</p>
             </div>
@@ -336,15 +329,15 @@ function Driver() {
               <img src={Line16} alt="line2" />
             </div> */}
             <Row>
-            <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
-              <div className='dispatcher_colum2'>
-                <p className='Dispatcher_col_hading2'>Do you want to register yourself as a Driver too?</p>
-                <div className='dispatcher_buttoncol1'>
-                  <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
-                  <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+              <Col className='Dispatcher_Col2' xs={24} sm={12} md={8} lg={8}  >
+                <div className='dispatcher_colum2'>
+                  <p className='Dispatcher_col_hading2'>Do you want to register yourself as a Driver too?</p>
+                  <div className='dispatcher_buttoncol1'>
+                    <button className={`Dispatcher_button1 ${clickedButton4 === "DRI_Yes" ? "clicked" : ""}`} onClick={() => handleClickButton4("DRI_Yes")}>Yes</button>
+                    <button className={`Dispatcher_button1 ${clickedButton4 === "DRI_No" ? "clicked" : ""}`} onClick={() => handleClickButton4("DRI_No")}>No</button>
+                  </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
             </Row>
             <Row className='Dispatcher_Imagetext'>
               <p className='Dispatcher_Imagetexthad'>Upload your Driver’s  License</p>
@@ -361,7 +354,7 @@ function Driver() {
                   beforeUpload={beforeUpload}
                   onChange={handleChange}
                 >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', }} />) : (uploadButton)}
                 </Upload>
               </Col>
               <Col className='Dispatcher_ImageCol2' xs={24} sm={12} md={8} lg={8}  >
@@ -375,28 +368,29 @@ function Driver() {
                   beforeUpload={beforeUpload}
                   onChange={handleChange}
                 >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', }} />) : (uploadButton)}
                 </Upload>
               </Col>
             </Row>
-
-
-
-
             <Row className='Dispatcher_button'>
               <button className='Dispatcher_Summitbutton' type="submit" >Create my account</button>
             </Row>
           </Col>
         </div>
       </div>
-      {/* <div>
-        <div className='endlinedri'>
-          <img src={Line3} alt="line3" />
-        </div>
-        <div className='group5'>
-          <img src={Group5} alt="group5" />
-        </div>
-      </div> */}
+      <footer className='Broker_footer'>
+        <Row className='Broker_footerRow'>
+          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
+            <div>@2023 Truckifind. All Rights Reserved.</div>
+          </Col>
+          <Col className='Broker_footercol2' xs={6} sm={6} md={4} lg={2}>
+            <div>Terms & conditions</div>
+          </Col >
+          <Col className='Broker_footercol3' xs={6} sm={6} md={4} lg={2}>
+            <div>Privacy Policy</div>
+          </Col>
+        </Row>
+      </footer>
     </>
   );
 }

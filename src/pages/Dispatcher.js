@@ -1,17 +1,12 @@
 import React from 'react'
-import { Row, Form, Input, Col, Button } from 'antd'
+import { Row, Form, Input, Col } from 'antd'
 import tfd from '../photo/tfd.png'
 import Group from '../photo/Group.png'
-import Line3 from '../photo/Line3.png'
-import Group5 from '../photo/Group5.png'
-import { Box } from '@mui/material'
 import Line16 from '../photo/Line16.png'
-
 import { useState } from 'react'
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
-
-
+import { useNavigate } from 'react-router-dom';
 
 const getBase64 = (img, callback) => {
   const reader = new FileReader();
@@ -32,7 +27,6 @@ const beforeUpload = (file) => {
 
 
 function Dispatcher() {
-
 
   const [loading, setLoading] = useState(false);
   const [imageUrl, setImageUrl] = useState();
@@ -59,23 +53,43 @@ function Dispatcher() {
       {loading ? <LoadingOutlined /> : <PlusOutlined />}
       <div
         style={{
-          marginTop: 25,
+          marginTop: 8,
         }}
       >
         Upload
       </div>
     </button>
   );
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/');
+  };
 
 
+  const [selectedButton, setSelectedButton] = useState(null);
 
+  const handleButtonClick = (buttonName) => {
+    setSelectedButton(buttonName);
+  };
 
+  const [clickedButton, setClickedButton] = useState(null);
+  const handleClickButton = (clickedName) => {
+    setClickedButton(clickedName);
+  };
+  const [clickedButton2, setClickedButton2] = useState(null);
+  const handleClickButton2 = (clickedName) => {
+    setClickedButton2(clickedName);
+  };
+  const [clickedButton3, setClickedButton3] = useState(null);
+  const handleClickButton3 = (clickedName) => {
+    setClickedButton3(clickedName);
+  };
 
   return (
     <>
       <div>
         <Row className='had'>
-          <div className="tfd">
+          <div className="tfd" onClick={handleClick}>
             <img src={tfd} alt="Logo" />
           </div>
           {/* <div className='logohader'>
@@ -115,8 +129,8 @@ function Dispatcher() {
                 <div className='dispatcher_colum2'>
                   <p className='Dispatcher_col_hading2'>Do you have a TSA Card?</p>
                   <div className='dispatcher_buttoncol1'>
-                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
-                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                    <button className={`Dispatcher_button1 ${clickedButton === "TSA_Yes" ? "clicked" : ""}`} onClick={() => handleClickButton("TSA_Yes")}>Yes</button>
+                    <button className={`Dispatcher_button1 ${clickedButton === "TSA_No" ? "clicked" : ""}`} onClick={() => handleClickButton("TSA_No")}>No</button>
                   </div>
                 </div>
               </Col>
@@ -124,8 +138,8 @@ function Dispatcher() {
                 <div className='dispatcher_colum2'>
                   <p className='Dispatcher_col_hading2'>Do you have TWIC?</p>
                   <div className='dispatcher_buttoncol1'>
-                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
-                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                    <button className={`Dispatcher_button1 ${clickedButton2 === "TWIC_Yes" ? "clicked" : ""}`} onClick={() => handleClickButton2("TWIC_Yes")}>Yes</button>
+                    <button className={`Dispatcher_button1 ${clickedButton2 === "TWIC_No" ? "clicked" : ""}`} onClick={() => handleClickButton2("TWIC_No")}>No</button>
                   </div>
                 </div>
               </Col>
@@ -135,8 +149,8 @@ function Dispatcher() {
                 <div className='dispatcher_colum2'>
                   <p className='Dispatcher_col_hading2'>Are you HAZMAT Certified?</p>
                   <div className='dispatcher_buttoncol1'>
-                    <button class="Dispatcher_button1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="">Yes</button>
-                    <button class="Dispatcher_button2" width="40%" background="" radius="24px" borderradius="1px solid #5D5E60B2">No</button>
+                    <button className={`Dispatcher_button1 ${clickedButton3 === "HAZ_Yes" ? "clicked" : ""}`} onClick={() => handleClickButton3("HAZ_Yes")}>Yes</button>
+                    <button className={`Dispatcher_button1 ${clickedButton3 === "HAZ_No" ? "clicked" : ""}`} onClick={() => handleClickButton3("HAZ_No")}>No</button>
                   </div>
                 </div>
               </Col>
@@ -156,7 +170,7 @@ function Dispatcher() {
                   beforeUpload={beforeUpload}
                   onChange={handleChange}
                 >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', }} />) : (uploadButton)}
                 </Upload>
               </Col>
               <Col className='Dispatcher_ImageCol2' xs={24} sm={12} md={8} lg={8}  >
@@ -170,15 +184,10 @@ function Dispatcher() {
                   beforeUpload={beforeUpload}
                   onChange={handleChange}
                 >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '400%', }} />) : (uploadButton)}
+                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', }} />) : (uploadButton)}
                 </Upload>
               </Col>
             </Row>
-
-
-
-
-
             <div className='text_Dispatcher1'>
               <p>Company</p>
             </div>
@@ -200,14 +209,6 @@ function Dispatcher() {
                 </Form.Item>
               </Col>
             </Row>
-
-
-
-
-
-
-
-
             <div className='text_Dispatcher2'>
               <p>Vehicle</p>
             </div>
@@ -226,7 +227,7 @@ function Dispatcher() {
                     }}
                     placeholder="Truck Type"
                   />
-                </Form.Item>
+                </Form.Item>className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Pallet Jack" ? "selected" : ""}`} onClick={() => handleButtonClick("Pallet Jack")}
               </Col>
               <Col className='Dispatcher_VehicalCol2' xs={24} sm={12} md={8} lg={8}  >
                 <p className='Dispatcher_Vehicaltext2'>Truck Size</p>
@@ -306,43 +307,43 @@ function Dispatcher() {
             </Row>
             <Row className='Dispatcher_Accessoriesbutton'>
               <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4} >
-                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Pallet Jack</button>
+                <button className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Pallet Jack" ? "selected" : ""}`} onClick={() => handleButtonClick("Pallet Jack")} >Pallet Jack</button>
               </Col>
               <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4} >
-                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Lift Gate</button>
+                <button className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Lift Gate" ? "selected" : ""}`} onClick={() => handleButtonClick("Lift Gate")} >Lift Gate</button>
               </Col>
               <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4}>
-                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Straps</button>
+                <button className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Straps" ? "selected" : ""}`} onClick={() => handleButtonClick("Straps")} >Straps</button>
               </Col>
               <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4}>
-                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Blankets/Pads</button>
+                <button className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Blankets/Pads" ? "selected" : ""}`} onClick={() => handleButtonClick("Blankets/Pads")} >Blankets/Pads</button>
               </Col>
               <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4} >
-                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Trucks</button>
+                <button className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Trucks" ? "selected" : ""}`} onClick={() => handleButtonClick("Trucks")} >Trucks</button>
               </Col>
               <Col className='Dispatcher_asButton1' xs={24} sm={12} md={8} lg={4}  >
-                <button class="Dispatcher_Accessoriesbutton1" width="40%" background="rgba(17, 37, 53, 1)" radius="24px" borderradius="1px solid #5D5E60B2">Other</button>
+                <button className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Other" ? "selected" : ""}`} onClick={() => handleButtonClick("Other")} >Other</button>
               </Col>
-              </Row>
-
-
-
-
-
+            </Row>
             <Row className='Dispatcher_button'>
               <button className='Dispatcher_Summitbutton' type="submit" >Create my account</button>
             </Row>
           </Col>
         </div>
       </div>
-      {/* <div>
-        <div className='endlinedri'>
-          <img src={Line3} alt="line3" />
-        </div>
-        <div className='group5'>
-          <img src={Group5} alt="group5" />
-        </div>
-      </div> */}
+      <footer className='Broker_footer'>
+        <Row className='Broker_footerRow'>
+          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
+            <div>@2023 Truckifind. All Rights Reserved.</div>
+          </Col>
+          <Col className='Broker_footercol2' xs={6} sm={6} md={4} lg={2}>
+            <div>Terms & conditions</div>
+          </Col >
+          <Col className='Broker_footercol3' xs={6} sm={6} md={4} lg={2}>
+            <div>Privacy Policy</div>
+          </Col>
+        </Row>
+      </footer>
     </>
   );
 }

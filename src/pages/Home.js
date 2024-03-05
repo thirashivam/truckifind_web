@@ -17,9 +17,6 @@ import Group4 from '../photo/Group4.png'
 import Frame7 from '../photo/Frame7.png'
 import Frame8 from '../photo/Frame8.png'
 import Frame9 from '../photo/Frame9.png'
-import Line3 from '../photo/Line3.png'
-import Group5 from '../photo/Group5.png'
-import { Box } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 
 
@@ -44,13 +41,6 @@ const Home = () => {
         </Row>
       </div>
       <div></div>
-
-
-
-
-
-
-
       <Row className='hader_Row1'>
         <Col className='had1_text' sm={12} md={8} >
           <div className='text1'>
@@ -67,7 +57,6 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-
       <div>
         <Row className='midline'>
           {/* <img src={Line2} alt="line2" /> */}
@@ -247,14 +236,19 @@ const Home = () => {
           </Row>
         </div>
       </div>
-      {/* <div>
-        <div className='endline'>
-          <img src={Line3} alt="line3" />
-        </div>
-        <div className='group5'>
-          <img src={Group5} alt="group5" />
-        </div>
-      </div> */}
+      <footer className='Broker_footer'>
+        <Row className='Broker_footerRow'>
+          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
+          <div>@2023 Truckifind. All Rights Reserved.</div>
+          </Col>
+          <Col className='Broker_footercol2'  xs={6} sm={6} md={4} lg={2}>
+          <div>Terms & conditions</div>        
+          </Col >
+          <Col className='Broker_footercol3'  xs={6} sm={6} md={4} lg={2}>
+          <div>Privacy Policy</div>
+          </Col>
+        </Row>
+      </footer>
     </div>
   )
 }

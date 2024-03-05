@@ -323,7 +323,7 @@ body {
 }
 
 .exthader2 {
-    color: white;
+    color: #fff;
     padding: 20px;
     margin: 50px 49px;
 }
@@ -364,7 +364,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #dadada;
+    color: #fff;
 }
 
 .img_hader_video1 {
@@ -458,7 +458,7 @@ body {
 
 
 .texthader2 {
-    color: white;
+    color: #fff;
     font-size: 16px;
     padding: 40px 0px 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -871,7 +871,7 @@ body {
 
 
 .dis1 {
-    color: #dadada;
+    color: #fff;
     right: auto;
     text-align: center;
 }
@@ -887,7 +887,7 @@ body {
 }
 
 .dri1 {
-    color: #dadada;
+    color: #fff;
     right: auto;
     text-align: center;
 }
@@ -1035,10 +1035,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 4px;
-    margin-top: 80px!important;
-  }
-  
-  .login_fromcol {
+    margin-top: 80px !important;
+}
+
+.login_fromcol {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1049,58 +1049,59 @@ body {
     padding-right: calc(var(--bs-gutter-x)*.5);
     width: 100%;
     background: radial-gradient(circle, #010507 0, #020d14 86%);
-  }
-  
-  .logintext {
+}
+
+.logintext {
     color: #fff !important;
     font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
     padding: 0;
-  }
-  .login_textfrom1{
+}
+
+.login_textfrom1 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 120px 0px;
-  }
+}
 
-  @media only screen and (max-width: 599px) {
+@media only screen and (max-width: 599px) {
     .login_fromcol {
-      width: 100%;
-      background-size: cover;
-      background-position: center;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
     }
-  }
-  
-  @media only screen and (min-width: 600px) and (max-width: 1023px) {
-    .login_fromcol {
-      width: 50%;
-      background-size: cover;
-      background-position: center;
-    }
-  }
+}
 
-  @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
     .login_fromcol {
-      width: 50%;
-      background-size: cover;
-      background-position: center;
+        width: 50%;
+        background-size: cover;
+        background-position: center;
     }
-  }
-  
-  .driInput {
+}
+
+@media only screen and (min-width: 1024px) {
+    .login_fromcol {
+        width: 50%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.driInput {
     background: #112535;
-    border-color: rgba(93,94,96,.7);
+    border-color: rgba(93, 94, 96, .7);
     border-radius: 25px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
-    padding-left: 10px!important;
+    padding-left: 10px !important;
     padding: 1.2rem 1rem;
     width: 80%;
-  }
-  
-  .login_button {
+}
+
+.login_button {
     border: none;
     width: fit-content;
     border-radius: 8px;
@@ -1114,20 +1115,21 @@ body {
     font-weight: 700;
     line-height: normal;
     width: 100%;
-  }
-  
-  @media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 767px) {
     .login_button {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
-  
-  @media only screen and (max-width: 479px) {
+}
+
+@media only screen and (max-width: 479px) {
     .login_button {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  }
-  .login_Imagebackground{
+}
+
+.login_Imagebackground {
     background-color: #222;
     background-position: 50%;
     background-repeat: no-repeat;
@@ -1135,31 +1137,33 @@ body {
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
     color: #fff;
-  }
-
-@media (min-width: 325px) and (max-width: 576px){
-.login_Imagebackground {
-    display: none;
-}
 }
 
+@media (min-width: 325px) and (max-width: 576px) {
+    .login_Imagebackground {
+        display: none;
+    }
+}
 
-.login_inputbox{
+
+.login_inputbox {
     background: #112535;
-    background: radial-gradient(circle,#010507 0,#020d14 86%);
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+    background: radial-gradient(circle, #010507 0, #020d14 86%);
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
     width: 100%;
 }
+
 .login_inputbox::placeholder {
     color: #FFFFFF;
     font: 0.75rem sans-serif;
 }
-.User_text{
+
+.User_text {
     text-align: center;
     color: #fff !important;
     font-family: Poppins, sans-serif;
@@ -1168,7 +1172,7 @@ body {
     padding: 0;
 }
 
-.user_button{
+.user_button {
     border: none;
     width: fit-content;
     border-radius: 8px;
@@ -1185,7 +1189,7 @@ body {
 }
 
 .Usertext {
-    color: #dadada;
+    color: #fff;
     padding: 41px;
     margin: 63px;
     justify-content: center;
@@ -1212,22 +1216,23 @@ body {
     cursor: pointer;
     border-radius: 10px;
 }
-.login_inputbox{
+
+.login_inputbox {
     padding: 6px;
     align-items: center;
     justify-content: center;
 }
 
 
-.Broker_haderrow{
+.Broker_haderrow {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0px;
 }
 
-.Broker_hadertext{
-    color: #dadada;
+.Broker_hadertext {
+    color: #fff;
     font-size: 3.2rem;
     margin: 0px 0px -53px;
     display: flex;
@@ -1235,35 +1240,40 @@ body {
     align-items: center;
 }
 
-.Broker_from{
+.Broker_from {
     width: 100%;
     border-radius: 4px;
     padding: 15px 25px;
     background-color: rgb(11, 15, 23);
 }
-.broker_row1{
+
+.broker_row1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.broker_row2{
+
+.broker_row2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .imgupload {
-    color: #dadada;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
     margin: 20px;
 }
-.broker_row3{
+
+.broker_row3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .brokerbuton1 {
     border: none;
     width: fit-content;
@@ -1277,37 +1287,44 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-}
-.Dispatcher_Haderfrom{
+
+
 
 }
-.dispatcher_text{
-    color: #dadada;
+
+.Dispatcher_Haderfrom {}
+
+.dispatcher_text {
+    color: #fff;
     font-size: 3.2rem;
     margin: 0px 0px -53px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.dispatcher_from{
+
+.dispatcher_from {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 0px;
 }
-.dispatcher_hadercol{
+
+.dispatcher_hadercol {
     width: 100%;
     border-radius: 4px;
     padding: 15px 25px;
     background-color: rgb(11, 15, 23);
 }
-.Dispatcher_button{
+
+.Dispatcher_button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
 }
-.Dispatcher_button1{
+
+.Dispatcher_button1 {
     border: none;
     width: fit-content;
     border-radius: 8px;
@@ -1323,36 +1340,39 @@ body {
     line-height: normal;
 }
 
-.text_Dispatcher{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+.text_Dispatcher {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
 
-.Dispatcher_Row1{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+.Dispatcher_Row1 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_Col1{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_Col1 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.dispatcher_colum1{
+
+.dispatcher_colum1 {
     position: relative;
     margin-bottom: 20px;
 }
-.Dispatcher_col_hading1{
+
+.Dispatcher_col_hading1 {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1361,29 +1381,33 @@ body {
     margin: 15px 4px;
     text-align: left;
 }
-.dispatcher_Input1{
+
+.dispatcher_Input1 {
     background: #112535;
-    border-color: rgba(93,94,96,.7);
+    border-color: rgba(93, 94, 96, .7);
     border-radius: 25px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
-    padding-left: 10px!important;
+    padding-left: 10px !important;
     padding: 1.2rem 1rem;
     width: 80%;
 }
-.Dispatcher_Col2{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_Col2 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.dispatcher_colum2{
+
+.dispatcher_colum2 {
     position: relative;
     margin-bottom: 20px;
 }
-.Dispatcher_col_hading2{
+
+.Dispatcher_col_hading2 {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1392,11 +1416,14 @@ body {
     margin: 15px 4px;
     text-align: left;
 }
-.dispatcher_buttoncol1{
+
+.dispatcher_buttoncol1 {
+    display: flex;
     justify-content: space-between;
     width: 90%;
 }
-.Dispatcher_button1{
+
+.Dispatcher_button1 {
     border: 1px solid rgb(34, 159, 255);
     border-radius: 24px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
@@ -1412,7 +1439,8 @@ body {
     width: 25%;
     padding: 16px 2px !important;
 }
-.Dispatcher_button2{
+
+.Dispatcher_button2 {
     border: 1px solid rgb(34, 159, 255);
     border-radius: 24px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
@@ -1428,19 +1456,22 @@ body {
     width: 25%;
     padding: 16px 2px !important;
 }
-.Dispatcher_Imagetext{
+
+.Dispatcher_Imagetext {
     padding: 40px 0px 20px;
 }
-.Dispatcher_Imagetexthad{
+
+.Dispatcher_Imagetexthad {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    color:#dadada;
+    color: #fff;
 }
-.Dispatcher_Imagerow{
+
+.Dispatcher_Imagerow {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -1448,7 +1479,8 @@ body {
     margin-right: calc(var(--bs-gutter-x)*-.5);
     margin-top: calc(var(--bs-gutter-y)*-1);
 }
-.Dispatcher_Imagetext1{
+
+.Dispatcher_Imagetext1 {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1457,7 +1489,8 @@ body {
     text-align: left;
     color: #fff;
 }
-.Dispatcher_Imagetext2{
+
+.Dispatcher_Imagetext2 {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1466,47 +1499,53 @@ body {
     text-align: left;
     color: #fff;
 }
-.Dispatcher_Imagetext{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_Imagetext {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_Imagerow{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_Imagerow {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.text_Dispatcher1{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.text_Dispatcher1 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_CompanyRow{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_CompanyRow {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_CompanyCol1{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_CompanyCol1 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_Companytext{
+
+.Dispatcher_Companytext {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1515,42 +1554,46 @@ body {
     margin: 15px 4px;
     text-align: left;
 }
-.dispatcher_Input2{
+
+.dispatcher_Input2 {
     background: #112535;
-    border-color: rgba(93,94,96,.7);
+    border-color: rgba(93, 94, 96, .7);
     border-radius: 25px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
-    padding-left: 10px!important;
+    padding-left: 10px !important;
     padding: 1.2rem 1rem;
     width: 80%;
 }
 
-.text_Dispatcher2{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+.text_Dispatcher2 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_VehicalRow{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_VehicalRow {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_VehicalCol1{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_VehicalCol1 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_Vehicaltext1{
+
+.Dispatcher_Vehicaltext1 {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1559,25 +1602,28 @@ body {
     margin: 15px 4px;
     text-align: left;
 }
-.dispatcher_VehicalInput1{
+
+.dispatcher_VehicalInput1 {
     background: #112535;
-    border-color: rgba(93,94,96,.7);
+    border-color: rgba(93, 94, 96, .7);
     border-radius: 25px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
-    padding-left: 10px!important;
+    padding-left: 10px !important;
     padding: 1.2rem 1rem;
     width: 80%;
 }
-.Dispatcher_VehicalCol2{
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+
+.Dispatcher_VehicalCol2 {
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
 }
-.Dispatcher_Vehicaltext2{
+
+.Dispatcher_Vehicaltext2 {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1586,16 +1632,18 @@ body {
     margin: 15px 4px;
     text-align: left;
 }
-.dispatcher_VehicalInput2{
+
+.dispatcher_VehicalInput2 {
     background: #112535;
-    border-color: rgba(93,94,96,.7);
+    border-color: rgba(93, 94, 96, .7);
     border-radius: 25px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
-    padding-left: 10px!important;
+    padding-left: 10px !important;
     padding: 1.2rem 1rem;
     width: 80%;
 }
+
 .Vehical_weight_count {
     color: #fff;
     font-size: 14px;
@@ -1605,10 +1653,9 @@ body {
     top: 19px;
 }
 
-.Dispatcher_AccessoriesRow{
+.Dispatcher_AccessoriesRow {}
 
-}
-.Dispatcher_AccessoriesText1{
+.Dispatcher_AccessoriesText1 {
     font-family: Inter;
     font-size: 16px;
     font-weight: 500;
@@ -1618,7 +1665,8 @@ body {
     text-align: left;
     color: #fff;
 }
-.Dispatcher_Accessoriesbutton{
+
+.Dispatcher_Accessoriesbutton {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -1626,7 +1674,8 @@ body {
     margin-right: calc(var(--bs-gutter-x)*-.5);
     margin-top: calc(var(--bs-gutter-y)*-1);
 }
-.Dispatcher_Accessoriesbutton1{
+
+.Dispatcher_Accessoriesbutton1 {
     border: 1px solid rgba(93, 94, 96, 0.698);
     border-radius: 24px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
@@ -1641,10 +1690,20 @@ body {
     width: 80%;
     padding: 16px 2px !important;
 }
-.Dispatcher_asButton1{
+.Dispatcher_Accessoriesbutton1.selected {
+    background-color: rgba(16, 98, 161, 1);
+  }
+
+  .Dispatcher_button1.clicked {
+    background-color: rgba(16, 98, 161, 1);
+  }
+  
+
+.Dispatcher_asButton1 {
     margin-bottom: 25px;
 }
-.Dispatcher_Summitbutton{
+
+.Dispatcher_Summitbutton {
     border: 1px solid rgb(34, 159, 255);
     border-radius: 24px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
@@ -1660,24 +1719,97 @@ body {
     width: 65%;
     padding: 16px 2px !important;
 }
+
 .dispatcher_Input1::placeholder {
     color: #FFFFFF;
     font: 0.75rem sans-serif;
 }
+
 .dispatcher_Input2::placeholder {
     color: #FFFFFF;
     font: 0.75rem sans-serif;
 }
+
 .dispatcher_VehicalInput2::placeholder {
     color: #FFFFFF;
     font: 0.75rem sans-serif;
 }
+
 .dispatcher_VehicalInput1::placeholder {
     color: #FFFFFF;
     font: 0.75rem sans-serif;
 }
 
+.driInput::placeholder {
+    color: #FFFFFF;
+    font: 0.75rem sans-serif;
+}
 
+/* Footer styles */
+.Broker_footer {
+    color: #fff;
+    padding: 20px;
+}
+
+.Broker_footerRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Broker_footerRow>div {
+    margin-bottom: 10px;
+}
+
+.Broker_footercol1,
+.Broker_footercol2,
+.Broker_footercol3 {
+    flex: 1;
+}
+
+/* Media queries for various screen sizes */
+@media (max-width: 767px) {
+
+    .Broker_footercol1,
+    .Broker_footercol2,
+    .Broker_footercol3 {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Broker_footercol1 {
+        flex-basis: 70%;
+    }
+
+    .Broker_footercol2,
+    .Broker_footercol3 {
+        flex-basis: 30%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Broker_footercol1 {
+        flex-basis: 50%;
+    }
+
+    .Broker_footercol2,
+    .Broker_footercol3 {
+        flex-basis: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Broker_footercol1 {
+        flex-basis: 40%;
+    }
+
+    .Broker_footercol2,
+    .Broker_footercol3 {
+        flex-basis: 30%;
+    }
+}
 
 
 
@@ -1696,7 +1828,7 @@ body {
 }
 
 .textbroker {
-    color: #dadada;
+    color: #fff;
     margin: 20px;
 }
 
@@ -1716,7 +1848,14 @@ body {
 .brokertext1,
 .brokertext2,
 .brokertext3 {
-    color: #dadada;
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+    margin: 15px 4px;
+    text-align: left;
 }
 
 .brokercol1,
@@ -1735,31 +1874,8 @@ body {
     padding: 30px;
 }
 
-.driverrow1,
-.driverrow2,
-.driverrow3,
-.driverrow4,
-.driverrow5,
-.driverrow6,
-.driverrow7 {
-    margin: 38px;
-}
 
-.driverrow8 {
-    margin: 38px;
-    align-items: center;
-    justify-content: center;
-}
 
-.driveraddress {
-    left: 20;
-}
-
-.groupdriver {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .endlinedri {
     display: flex;
@@ -1786,7 +1902,7 @@ body {
 }
 
 .texDispatcher {
-    color: #dadada;
+    color: #fff;
     left: 50%;
     /* right: 30%; */
     /* text-align: center; */
@@ -1795,27 +1911,13 @@ body {
 }
 
 .textDriver {
-    color: #dadada;
+    color: #fff;
     margin-left: 49px;
 }
 
-.driInput::placeholder {
-    color: #FFFFFF;
-    font: 0.75rem sans-serif;
-}
 
 
 
 .weight_dis {
     position: relative;
-}
-
-.driver_level {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 19px;
-    margin: 15px 4px;
-    text-align: left;
 }

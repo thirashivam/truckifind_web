@@ -1,55 +1,61 @@
-import React from 'react'
-import { Input, Row, Form } from 'antd'
-import { Col } from 'antd'
-import tfd from '../photo/tfd.png'
-import Group from '../photo/Group.png'
-import Line3 from '../photo/Line3.png'
-import Group5 from '../photo/Group5.png'
-import Grouplp from '../photo/Grouplp.png'
-import LoginFrame from '../photo/LoginFrame.png'
-import { Box } from '@mui/material'
+import React, { useState } from 'react';
+import { Input, Row, Form } from 'antd';
+import { Col } from 'antd';
+import tfd from '../photo/tfd.png';
+import Group from '../photo/Group.png';
+import Grouplp from '../photo/Grouplp.png';
+import LoginFrame from '../photo/LoginFrame.png';
 import { useNavigate } from 'react-router-dom';
-// import PhoneInput from 'react-phone-number-input'
-// import { useState } from 'react'
 
 function Login() {
   const navigate = useNavigate();
+  const [mobileNumber, setMobileNumber] = useState('');
+
   const goToUsertypePage = () => {
-    navigate('/Usertype');
+    if (mobileNumber.trim() !== '') {
+      navigate('/Usertype');
+    } else {
+      alert('Please fill in your mobile number');
+    }
   };
-  // const [value, setValue] = useState()
+
+  const handleClick = () => {
+    navigate('/');
+  };
+
+  const handleInputChange = (e) => {
+    setMobileNumber(e.target.value);
+  };
+
   return (
     <>
       <div>
         <Row className='had'>
-          <div className="tfd">
+          <div className="tfd" onClick={handleClick}>
             <img src={tfd} alt="Logo" />
           </div>
-          {/* <div className='logohader'>
-            <img src={Group} alt="Logo" />
-          </div> */}
         </Row>
       </div>
       <div>
-
-
-
-
         <Row className='login_from'>
           <Col className='login_fromcol' sm={12} md={12}  >
-            <div style={{background: `url(${LoginFrame})`}}>
-            <div className='login_textfrom1'>
+            <div style={{ background: `url(${LoginFrame})` }}>
+              <div className='login_textfrom1'>
                 <div className='logintext'>
                   <p>Login !</p>
                   <Form.Item  >
-                  <Input className='login_inputbox'
-                    placeholder="Mobile number"
-                  />
+                    <Input 
+                      className='login_inputbox'
+                      required="required"
+                      placeholder="Mobile number"
+                      value={mobileNumber}
+                      onChange={handleInputChange}
+                    />
                   </Form.Item>
                   <button onClick={goToUsertypePage} className='login_button' type="submit">Login</button>
                 </div>
-                </div>
-                </div>
+              </div>
+            </div>
           </Col>
           <Col lg={6}  >
             <div className='login_Imagebackground'>
@@ -57,22 +63,22 @@ function Login() {
             </div>
           </Col>
         </Row>
-
-
-
-
-
-
       </div>
-      {/* <div>
-        <div className='endline'>
-          <img src={Line3} alt="line3" />
-        </div>
-        <div className='group5'>
-          <img src={Group5} alt="group5" />
-        </div>
-      </div> */}
+      <footer className='Broker_footer'>
+        <Row className='Broker_footerRow'>
+          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
+            <div>@2023 Truckifind. All Rights Reserved.</div>
+          </Col>
+          <Col className='Broker_footercol2' xs={6} sm={6} md={4} lg={2}>
+            <div>Terms & conditions</div>
+          </Col >
+          <Col className='Broker_footercol3' xs={6} sm={6} md={4} lg={2}>
+            <div>Privacy Policy</div>
+          </Col>
+        </Row>
+      </footer>
     </>
   );
 }
-export default Login
+
+export default Login;
