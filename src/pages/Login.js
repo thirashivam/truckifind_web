@@ -48,6 +48,11 @@ function Login() {
                     <Input
                       className='login_inputbox'
                       required="required"
+                      style={{
+                        border: 'none',
+                        color: '#FFFFFF',
+                        backgroundColor: '#112535',
+                      }}
                       placeholder="Mobile number"
                       value={mobileNumber}
                       onChange={handleInputChange}

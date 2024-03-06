@@ -87,9 +87,11 @@ body {
 
 .had1_text {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     color: #fff;
+    font-family: Inter;
+    font-size: 46px;
+    font-weight: 600;
 }
 
 .img_hader_video1 {
@@ -107,14 +109,13 @@ body {
 }
 
 .text1 {
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .text12 {
     color: #fff !important;
     font-family: Poppins, sans-serif;
     font-size: flex;
-    height: 100%;
     line-height: 1.6;
     padding: 0;
 }
@@ -176,8 +177,8 @@ body {
 
 
 .texthader2 { 
-    font-size: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 0px 10px;
 }
 
 .texthader21 {
@@ -749,7 +750,7 @@ body {
 .driInput {
     background: #112535;
     border-color: rgba(93, 94, 96, .7);
-    border-radius: 25px;
+    border-radius: 10px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
     padding-left: 10px !important;
@@ -803,9 +804,9 @@ body {
 
 .login_inputbox {
     background: #112535;
-    background: radial-gradient(circle, #010507 0, #020d14 86%);
-    color: #fff !important;
-    font-family: Poppins, sans-serif;
+    border-color: rgba(93, 94, 96, .7);
+    border-radius: 10px;
+    font-weight: 600;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
@@ -1042,7 +1043,7 @@ body {
 .dispatcher_Input1 {
     background: #112535;
     border-color: rgba(93, 94, 96, .7);
-    border-radius: 25px;
+    border-radius: 10px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
     padding-left: 10px !important;
@@ -1215,7 +1216,7 @@ body {
 .dispatcher_Input2 {
     background: #112535;
     border-color: rgba(93, 94, 96, .7);
-    border-radius: 25px;
+    border-radius: 10px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
     padding-left: 10px !important;
@@ -1263,7 +1264,7 @@ body {
 .dispatcher_VehicalInput1 {
     background: #112535;
     border-color: rgba(93, 94, 96, .7);
-    border-radius: 25px;
+    border-radius: 10px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
     padding-left: 10px !important;
@@ -1293,7 +1294,7 @@ body {
 .dispatcher_VehicalInput2 {
     background: #112535;
     border-color: rgba(93, 94, 96, .7);
-    border-radius: 25px;
+    border-radius: 10px;
     font-weight: 600;
     padding: 1.4rem 1rem 1.4rem 60px;
     padding-left: 10px !important;
@@ -1581,3 +1582,14 @@ body {
 .weight_dis {
     position: relative;
 }
+
+.Home_Container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px; 
+  }
+  @media only screen and (max-width: 768px) {
+    .Home_Container {
+      max-width: 90%;
+    }
+  }
