@@ -3,7 +3,7 @@ import { Row, Space,Col } from 'antd'
 import tfd from '../photo/tfd.png'
 import Group from '../photo/Group.png'
 import LoginFrame from '../photo/LoginFrame.png'
-import { Box } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react'
 
@@ -91,6 +91,7 @@ function Usertype() {
           </Box>
         </Row>
       </div>
+      <Container>
       <footer className='Broker_footer'>
         <Row className='Broker_footerRow'>
           <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
@@ -104,6 +105,7 @@ function Usertype() {
           </Col>
         </Row>
       </footer>
+      </Container>
     </>
   );
 }

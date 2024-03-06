@@ -6,6 +6,7 @@ import Group from '../photo/Group.png';
 import Grouplp from '../photo/Grouplp.png';
 import LoginFrame from '../photo/LoginFrame.png';
 import { useNavigate } from 'react-router-dom';
+import { Container } from '@mui/material';
 
 function Login() {
   const navigate = useNavigate();
@@ -38,13 +39,13 @@ function Login() {
       </div>
       <div>
         <Row className='login_from'>
-          <Col className='login_fromcol' sm={12} md={12}  >
+          <Col className='login_fromcol' sm={12} md={8} lg={8}  >
             <div style={{ background: `url(${LoginFrame})` }}>
               <div className='login_textfrom1'>
                 <div className='logintext'>
                   <p>Login !</p>
                   <Form.Item  >
-                    <Input 
+                    <Input
                       className='login_inputbox'
                       required="required"
                       placeholder="Mobile number"
@@ -57,9 +58,9 @@ function Login() {
               </div>
             </div>
           </Col>
-          <Col lg={6}  >
+          <Col lg={8}  >
             <div className='login_Imagebackground'>
-              <img src={Grouplp} alt='loginpage' />
+              <img className='login_Imagepage' src={Grouplp} alt='loginpage' />
             </div>
           </Col>
         </Row>

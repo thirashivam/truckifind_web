@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { Container } from '@mui/material'
 
 const getBase64 = (img, callback) => {
   const reader = new FileReader();
@@ -378,6 +379,7 @@ function Driver() {
           </Col>
         </div>
       </div>
+      <Container>
       <footer className='Broker_footer'>
         <Row className='Broker_footerRow'>
           <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
@@ -391,6 +393,7 @@ function Driver() {
           </Col>
         </Row>
       </footer>
+      </Container>
     </>
   );
 }

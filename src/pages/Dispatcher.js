@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { Container } from '@mui/material'
 
 const getBase64 = (img, callback) => {
   const reader = new FileReader();
@@ -227,7 +228,7 @@ function Dispatcher() {
                     }}
                     placeholder="Truck Type"
                   />
-                </Form.Item>className={`Dispatcher_Accessoriesbutton1 ${selectedButton === "Pallet Jack" ? "selected" : ""}`} onClick={() => handleButtonClick("Pallet Jack")}
+                </Form.Item>
               </Col>
               <Col className='Dispatcher_VehicalCol2' xs={24} sm={12} md={8} lg={8}  >
                 <p className='Dispatcher_Vehicaltext2'>Truck Size</p>
@@ -331,6 +332,7 @@ function Dispatcher() {
           </Col>
         </div>
       </div>
+      <Container>
       <footer className='Broker_footer'>
         <Row className='Broker_footerRow'>
           <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
@@ -344,6 +346,7 @@ function Dispatcher() {
           </Col>
         </Row>
       </footer>
+      </Container>
     </>
   );
 }
