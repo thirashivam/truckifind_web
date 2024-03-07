@@ -1,6 +1,9 @@
 body {
     background-color: #0c0a0a;
     color: #1f2023;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,7 +72,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -89,7 +92,7 @@ body {
     display: flex;
     justify-content: center;
     color: #fff;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 46px;
     font-weight: 600;
 }
@@ -165,11 +168,11 @@ body {
 
 @media only screen and (max-width: 767px) {
 
-    .had1_text
-    {
+    .had1_text {
         flex: 0 0 100%;
         font-size: 1.6rem;
     }
+
     .img_hader_video1 {
         flex: 0 0 100%;
         margin: 60px 0;
@@ -177,7 +180,7 @@ body {
 }
 
 
-.texthader2 { 
+.texthader2 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 40px 0px 10px;
 }
@@ -189,6 +192,7 @@ body {
     line-height: 27.36px;
     text-align: center;
 }
+
 @media only screen and (min-width: 1024px) {
     .texthader21 {
         flex: 0 0 50%;
@@ -204,8 +208,7 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-    .texthader21
-    {
+    .texthader21 {
         flex: 0 0 100%;
         font-size: 1.0rem;
     }
@@ -250,7 +253,7 @@ body {
 
 .hader_logo_img1 {
     margin: auto;
-    
+
 }
 
 .hader_Image_logo2 {
@@ -714,7 +717,7 @@ body {
 
 .logintext {
     color: #fff !important;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 36px;
     font-weight: 600;
     line-height: 60px;
@@ -823,7 +826,8 @@ body {
 .login_inputbox::placeholder {
     color: #dadada;
 }
-.login_Imagepage{
+
+.login_Imagepage {
     width: 100%;
 }
 
@@ -831,7 +835,7 @@ body {
     text-align: center;
     color: #fff !important;
     padding: 0;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 36px;
     font-weight: 600;
 }
@@ -941,7 +945,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1031,7 +1035,7 @@ body {
 }
 
 .Dispatcher_col_hading1 {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1065,7 +1069,7 @@ body {
 }
 
 .Dispatcher_col_hading2 {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1088,7 +1092,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1106,7 +1110,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1120,7 +1124,7 @@ body {
 }
 
 .Dispatcher_Imagetexthad {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -1130,8 +1134,8 @@ body {
 }
 
 .Dispatcher_Imagerow {
-    color: #fff!important;
-    font-family: Poppins,sans-serif;
+    color: #fff !important;
+    font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
@@ -1139,7 +1143,7 @@ body {
 }
 
 .Dispatcher_Imagetext1 {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -1149,7 +1153,7 @@ body {
 }
 
 .Dispatcher_Imagetext2 {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -1204,7 +1208,7 @@ body {
 }
 
 .Dispatcher_Companytext {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1251,7 +1255,7 @@ body {
 }
 
 .Dispatcher_Vehicaltext1 {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1280,7 +1284,7 @@ body {
 }
 
 .Dispatcher_Vehicaltext2 {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1309,7 +1313,7 @@ body {
 }
 
 .Dispatcher_AccessoriesText1 {
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1336,7 +1340,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1344,14 +1348,15 @@ body {
     padding: 12px 2px !important;
     cursor: pointer;
 }
+
 .Dispatcher_Accessoriesbutton1.selected {
     background-color: rgba(16, 98, 161, 1);
-  }
+}
 
-  .Dispatcher_button1.clicked {
+.Dispatcher_button1.clicked {
     background-color: rgba(16, 98, 161, 1);
-  }
-  
+}
+
 
 .Dispatcher_asButton1 {
     margin-bottom: 25px;
@@ -1365,7 +1370,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -1405,7 +1410,8 @@ body {
     color: #fff;
     padding: 20px;
 }
-.Broker_footerHome{
+
+.Broker_footerHome {
     color: #fff;
     padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1508,7 +1514,7 @@ body {
 .brokertext2,
 .brokertext3 {
     color: #fff;
-    font-family: Inter;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0;
@@ -1578,10 +1584,12 @@ body {
 }
 
 
+img {
+    object-fit: contain;
+}
 
 
-
-.Image_Box1{
+.Image_Box1 {
     display: flex;
     justify-content: center;
     align-items: center;
