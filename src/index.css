@@ -128,7 +128,7 @@ body {
     border: none;
     width: fit-content;
     border-radius: 8px;
-    padding: 10px;
+    padding: 16px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
     background: linear-gradient(89.35deg, rgb(16, 98, 161) 2.37%, rgb(34, 159, 255) 105.12%);
     color: rgb(255, 255, 255);
@@ -137,6 +137,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -613,7 +614,7 @@ body {
     border: none;
     width: fit-content;
     border-radius: 8px;
-    padding: 10px;
+    padding: 16px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
     background: linear-gradient(89.35deg, rgb(16, 98, 161) 2.37%, rgb(34, 159, 255) 105.12%);
     color: rgb(255, 255, 255);
@@ -622,6 +623,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .butt2 {
@@ -635,7 +637,7 @@ body {
     border: none;
     width: fit-content;
     border-radius: 8px;
-    padding: 10px;
+    padding: 16px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
     background: linear-gradient(89.35deg, rgb(16, 98, 161) 2.37%, rgb(34, 159, 255) 105.12%);
     color: rgb(255, 255, 255);
@@ -644,6 +646,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .butt3 {
@@ -657,7 +660,7 @@ body {
     border: none;
     width: fit-content;
     border-radius: 8px;
-    padding: 10px;
+    padding: 16px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
     background: linear-gradient(89.35deg, rgb(16, 98, 161) 2.37%, rgb(34, 159, 255) 105.12%);
     color: rgb(255, 255, 255);
@@ -666,6 +669,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .butt4 {
@@ -774,6 +778,7 @@ body {
     font-weight: 700;
     line-height: normal;
     width: 100%;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
@@ -825,10 +830,10 @@ body {
 .User_text {
     text-align: center;
     color: #fff !important;
-    font-family: Poppins, sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.6;
     padding: 0;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .user_button {
@@ -845,6 +850,7 @@ body {
     font-weight: 700;
     line-height: normal;
     width: 100%;
+    cursor: pointer;
 }
 
 .Usertext {
@@ -870,10 +876,11 @@ body {
     border-image-source: linear-gradient(89.35deg, #1062A1 2.37%, #229FFF 105.12%);
     color: #fff;
     border: 1px solid gray;
-    padding: 10px 20px;
+    padding: 7px 20px;
     font-size: 15px;
     cursor: pointer;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .login_inputbox {
@@ -930,7 +937,7 @@ body {
     border: 1px solid rgb(34, 159, 255);
     border-radius: 15px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
-    background: rgb(17, 37, 53);
+    background: linear-gradient(89.35deg, rgb(16, 98, 161) 2.37%, rgb(34, 159, 255) 105.12%);
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
@@ -941,6 +948,7 @@ body {
     overflow: hidden;
     width: 65%;
     padding: 12px 2px !important;
+    cursor: pointer;
 }
 
 
@@ -1069,7 +1077,7 @@ body {
 .dispatcher_buttoncol1 {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 53%;
 }
 
 .Dispatcher_button1 {
@@ -1085,8 +1093,9 @@ body {
     font-weight: 600;
     line-height: normal;
     overflow: hidden;
-    width: 25%;
+    width: 46%;
     padding: 12px 2px !important;
+    cursor: pointer;
 }
 
 .Dispatcher_button2 {
@@ -1121,12 +1130,12 @@ body {
 }
 
 .Dispatcher_Imagerow {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(var(--bs-gutter-x)*-.5);
-    margin-top: calc(var(--bs-gutter-y)*-1);
+    color: #fff!important;
+    font-family: Poppins,sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    line-height: 1.6;
+    padding: 0;
 }
 
 .Dispatcher_Imagetext1 {
@@ -1158,14 +1167,14 @@ body {
     padding: 0;
 }
 
-.Dispatcher_Imagerow {
+/* .Dispatcher_Imagerow {
     color: #fff !important;
     font-family: Poppins, sans-serif;
     font-size: 1.6rem;
     height: 100%;
     line-height: 1.6;
     padding: 0;
-}
+} */
 
 .text_Dispatcher1 {
     color: #fff !important;
@@ -1333,6 +1342,7 @@ body {
     line-height: normal;
     width: 80%;
     padding: 12px 2px !important;
+    cursor: pointer;
 }
 .Dispatcher_Accessoriesbutton1.selected {
     background-color: rgba(16, 98, 161, 1);
@@ -1351,7 +1361,7 @@ body {
     border: 1px solid rgb(34, 159, 255);
     border-radius: 15px;
     box-shadow: rgba(72, 72, 72, 0.72) -7px 4px 46px -1px;
-    background: rgb(17, 37, 53);
+    background: linear-gradient(89.35deg, rgb(16, 98, 161) 2.37%, rgb(34, 159, 255) 105.12%);
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 16px;
@@ -1362,6 +1372,7 @@ body {
     overflow: hidden;
     width: 65%;
     padding: 12px 2px !important;
+    cursor: pointer;
 }
 
 .dispatcher_Input1::placeholder {
@@ -1404,7 +1415,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
 }
 
 .Broker_footerRow>div {
@@ -1569,3 +1579,18 @@ body {
 
 
 
+
+
+.Image_Box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 218px;
+    border-radius: 8px;
+    padding: 0px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-right: 23px;
+    border: 2px dotted rgba(93, 94, 96, 0.7);
+}

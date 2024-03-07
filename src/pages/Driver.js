@@ -9,57 +9,60 @@ import { message, Upload } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { Container } from '@mui/material'
 
-const getBase64 = (img, callback) => {
-  const reader = new FileReader();
-  reader.addEventListener('load', () => callback(reader.result));
-  reader.readAsDataURL(img);
+
+import { FileUploader } from 'react-drag-drop-files';
+import { Spin } from 'antd';
+import UploadIcon from '../components/UploadIcon'
+
+const fileTypes = ['image/jpeg', 'image/png'];
+
+const DragDrop = (props) => {
+  const { handleChange, comp, disabled } = props;
+
+  return (
+    <FileUploader
+      handleChange={handleChange}
+      name="file"
+      types={fileTypes}
+      children={comp}
+      disabled={disabled}
+    />
+  );
 };
-const beforeUpload = (file) => {
-  const isJpgOrPng = file.type === 'image/jpeg' || file.type === 'image/png';
-  if (!isJpgOrPng) {
-    message.error('You can only upload JPG/PNG file!');
-  }
-  const isLt2M = file.size / 1024 / 1024 < 2;
-  if (!isLt2M) {
-    message.error('Image must smaller than 2MB!');
-  }
-  return isJpgOrPng && isLt2M;
+
+const Box = (props) => {
+  const { image, imageLoading } = props;
+
+  return (
+    <div className="image_box_container">
+      {!imageLoading ? (
+        <div>
+          {image ? (
+            <>
+              <img src={image} alt="profileimage" loading="lazy" />
+            </>
+          ) : (
+            <UploadIcon />
+          )}
+        </div>
+      ) : (
+        <Spin indicator={<LoadingOutlined style={{ fontSize: 24 }} spin />} />
+      )}
+    </div>
+  );
 };
+
 
 function Driver() {
 
-  const [loading, setLoading] = useState(false);
-  const [imageUrl, setImageUrl] = useState();
-  const handleChange = (info) => {
-    if (info.file.status === 'uploading') {
-      setLoading(true);
-      return;
-    }
-    if (info.file.status === 'done') {
-      getBase64(info.file.originFileObj, (url) => {
-        setLoading(false);
-        setImageUrl(url);
-      });
-    }
+  const [image, setImage] = useState({ image: undefined, imageLoading: false });
+  const [imageError, setImageError] = useState(false);
+
+  const handleChange = () => {
+
   };
-  const uploadButton = (
-    <button
-      style={{
-        border: 0,
-        background: 'none',
-      }}
-      type="button"
-    >
-      {loading ? <LoadingOutlined /> : <PlusOutlined />}
-      <div
-        style={{
-          marginTop: 8,
-        }}
-      >
-        Upload
-      </div>
-    </button>
-  );
+
+
   const navigate = useNavigate();
   const handleClick = () => {
     navigate('/');
@@ -187,7 +190,7 @@ function Driver() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Your company name"
+                    placeholder="Address line 1"
                   />
                 </Form.Item>
               </Col>
@@ -199,7 +202,7 @@ function Driver() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Your company name"
+                    placeholder="Address line 2"
                   />
                 </Form.Item>
               </Col>
@@ -211,7 +214,7 @@ function Driver() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Your company name"
+                    placeholder="City"
                   />
                 </Form.Item>
               </Col>
@@ -225,7 +228,7 @@ function Driver() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Your company name"
+                    placeholder="State / Province"
                   />
                 </Form.Item>
               </Col>
@@ -237,7 +240,7 @@ function Driver() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Your company name"
+                    placeholder="Postal code"
                   />
                 </Form.Item>
               </Col>
@@ -249,7 +252,7 @@ function Driver() {
                       color: '#FFFFFF',
                       backgroundColor: '#112535',
                     }}
-                    placeholder="Your company name"
+                    placeholder="Country"
                   />
                 </Form.Item>
               </Col>
@@ -346,31 +349,17 @@ function Driver() {
             <Row className='Dispatcher_Imagerow'>
               <Col className='Dispatcher_ImageCol1' xs={24} sm={12} md={8} lg={8}  >
                 <p className='Dispatcher_Imagetext1'>Front</p>
-                <Upload
-                  name="avatar"
-                  listType="picture-card"
-                  className="avatar-uploader"
-                  showUploadList={false}
-                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
-                  beforeUpload={beforeUpload}
-                  onChange={handleChange}
-                >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', }} />) : (uploadButton)}
-                </Upload>
+                <div className='Image_Box1'>
+                    <DragDrop comp={<Box image={image.image} imageLoading={image.imageLoading} />} handleChange={handleChange} disabled={!!image.image} />
+                    {imageError ? <div className="form_errors">Required</div> : null}
+                </div>
               </Col>
               <Col className='Dispatcher_ImageCol2' xs={24} sm={12} md={8} lg={8}  >
                 <p className='Dispatcher_Imagetext2'>Back</p>
-                <Upload
-                  name="avatar"
-                  listType="picture-card"
-                  className="avatar-uploader"
-                  showUploadList={false}
-                  action="https://run.mocky.io/v3/435e224c-44fb-4773-9faf-380c5e6a2188"
-                  beforeUpload={beforeUpload}
-                  onChange={handleChange}
-                >
-                  {imageUrl ? (<img src={imageUrl} alt="avatar" style={{ width: '100%', }} />) : (uploadButton)}
-                </Upload>
+                <div className='Image_Box1'>
+                    <DragDrop comp={<Box image={image.image} imageLoading={image.imageLoading} />} handleChange={handleChange} disabled={!!image.image} />
+                    {imageError ? <div className="form_errors">Required</div> : null}
+                </div>
               </Col>
             </Row>
             <Row className='Dispatcher_button'>
@@ -379,13 +368,14 @@ function Driver() {
           </Col>
         </div>
       </div>
-      <Container>
+      <Row className='hader_Row1'>
+        <Col sm={20} >
       <footer className='Broker_footer'>
         <Row className='Broker_footerRow'>
-          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
+          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={20}>
             <div>@2023 Truckifind. All Rights Reserved.</div>
           </Col>
-          <Col className='Broker_footercol2' xs={6} sm={6} md={4} lg={2}>
+          <Col className='Broker_footercol2' xs={6} sm={6} md={4} lg={3}>
             <div>Terms & conditions</div>
           </Col >
           <Col className='Broker_footercol3' xs={6} sm={6} md={4} lg={2}>
@@ -393,7 +383,8 @@ function Driver() {
           </Col>
         </Row>
       </footer>
-      </Container>
+      </Col>
+      </Row>
     </>
   );
 }

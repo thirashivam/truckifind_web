@@ -48,8 +48,8 @@ function Usertype() {
           <Box alignItems={'center'} height={590} width={530} sx={{ borderRadius: 3, bgcolor: '#0B0F17' }}>
             <div style={{ background: `url(${LoginFrame})` }}>
               <div className='User_text'>
-                <p>Select your role !</p>
-                <Space direction="vertical" className='radio1' style={{ width: '55%' }}>
+                <p>Select your role</p>
+                <Space direction="vertical" className='radio1' style={{ width: '63%' }}>
                   <label>
                     Broker
                     <input
@@ -61,7 +61,7 @@ function Usertype() {
                     />
                   </label>
                 </Space><br /> <br />
-                <Space direction="vertical" className='radio1' style={{ width: '55%' }}>
+                <Space direction="vertical" className='radio1' style={{ width: '63%' }}>
                   <label>
                     Dispatcher
                     <input
@@ -73,7 +73,7 @@ function Usertype() {
                     />
                   </label>
                 </Space><br /> <br />
-                <Space direction="vertical" className='radio1' style={{ width: '55%' }} >
+                <Space direction="vertical" className='radio1' style={{ width: '63%' }} >
                   <label>
                     Driver
                     <input
@@ -91,21 +91,23 @@ function Usertype() {
           </Box>
         </Row>
       </div>
-      <Container>
+      <Row className='hader_Row1'>
+        <Col sm={16} >
       <footer className='Broker_footer'>
         <Row className='Broker_footerRow'>
-          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
-          <div>@2023 Truckifind. All Rights Reserved.</div>
+          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={18}>
+            <div>@2023 Truckifind. All Rights Reserved.</div>
           </Col>
-          <Col className='Broker_footercol2'  xs={6} sm={6} md={4} lg={2}>
-          <div>Terms & conditions</div>        
+          <Col className='Broker_footercol2' xs={6} sm={6} md={4} lg={3}>
+            <div>Terms & conditions</div>
           </Col >
-          <Col className='Broker_footercol3'  xs={6} sm={6} md={4} lg={2}>
-          <div>Privacy Policy</div>
+          <Col className='Broker_footercol3' xs={6} sm={6} md={4} lg={2}>
+            <div>Privacy Policy</div>
           </Col>
         </Row>
       </footer>
-      </Container>
+      </Col>
+      </Row>
     </>
   );
 }
