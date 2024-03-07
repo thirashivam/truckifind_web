@@ -47,7 +47,6 @@ function Login() {
                   <Form.Item  >
                     <Input
                       className='login_inputbox'
-                      required="required"
                       style={{
                         border: 'none',
                         color: '#FFFFFF',

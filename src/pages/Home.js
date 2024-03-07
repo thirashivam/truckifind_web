@@ -33,11 +33,11 @@ const Home = () => {
     <div>
       <div className='hader_Image_logo'>
         <Container>
-        <Row className='had_logo'>
+          <Row className='had_logo'>
             <div className="hader_logo_img">
               <img className='hader_logo_img1' src={tfd} alt="Logo" />
             </div>
-        </Row>
+          </Row>
         </Container>
       </div>
       <div></div>
@@ -57,8 +57,8 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <div>
-          <Container className='Home_Container'>
+      <Row className='hader_Row1'>
+        <Col sm={20} >
           <div className='texthader2'>
             <p className='texthader21'>
               <b>Welcome to TruckiFind</b>, Your Ultimate solution for efficient and streamlined trucking operations.Enjoy our
@@ -67,8 +67,8 @@ const Home = () => {
               progress at each and every point.<b> Join our growing network and experience the future of trucking.</b>
             </p>
           </div>
-          </Container>
-      </div>
+        </Col>
+      </Row>
       <div>
         <div className='dis1'>
           <h1>Brokers</h1>
@@ -234,21 +234,23 @@ const Home = () => {
           </Row>
         </div>
       </div>
-      <Container>
-      <footer className='Broker_footerHome'>
-        <Row className='Broker_footerRow'>
-          <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
-          <div>@2023 Truckifind. All Rights Reserved.</div>
-          </Col>
-          <Col className='Broker_footercol2'  xs={6} sm={6} md={4} lg={2}>
-          <div>Terms & conditions</div>
-          </Col >
-          <Col className='Broker_footercol3'  xs={6} sm={6} md={4} lg={2}>
-          <div>Privacy Policy</div>
-          </Col>
+      <Row className='hader_Row1'>
+        <Col sm={20} >
+          <footer className='Broker_footerHome'>
+            <Row className='Broker_footerRow'>
+              <Col className='Broker_footercol1' xs={12} sm={12} md={10} lg={14}>
+                <div>@2023 Truckifind. All Rights Reserved.</div>
+              </Col>
+              <Col className='Broker_footercol2' xs={6} sm={6} md={4} lg={2}>
+                <div>Terms & conditions</div>
+              </Col >
+              <Col className='Broker_footercol3' xs={6} sm={6} md={4} lg={2}>
+                <div>Privacy Policy</div>
+              </Col>
+            </Row>
+          </footer>
+        </Col>
         </Row>
-      </footer>
-      </Container>
     </div>
   )
 }

@@ -92,7 +92,7 @@ function Broker() {
               </div>
             </Row>
             <Row  className='broker_row1'>
-              <Col className='brokercol1' xs={24} sm={12} md={8} lg={7} >
+              <Col className='brokercol1' xs={24} sm={12} md={8} lg={8} >
                 <p className='brokertext1'>Broker Name</p>
                 <Form.Item  >
                   <Input className='driInput'
@@ -105,7 +105,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' xs={24} sm={12} md={8} lg={7}  >
+              <Col className='brokercol2' xs={24} sm={12} md={8} lg={8}  >
                 <p className='brokertext2'>Company Name</p>
                 <Form.Item  >
                   <Input className='driInput'
@@ -118,7 +118,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' xs={24} sm={12} md={8} lg={7}  >
+              <Col className='brokercol3' xs={24} sm={12} md={8} lg={8}  >
                 <p className='brokertext3'>Company Code</p>
                 <Form.Item  >
                   <Input className='driInput'
@@ -133,7 +133,7 @@ function Broker() {
               </Col>
             </Row>
             <Row className='broker_row2'>
-              <Col className='brokercol1' xs={24} sm={12} md={8} lg={7} > 
+              <Col className='brokercol1' xs={24} sm={12} md={8} lg={8} > 
                 <p className='brokertext1'>MC#</p>
                 <Form.Item  >
                   <Input className='driInput'
@@ -146,7 +146,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol2' xs={24} sm={12} md={8} lg={7}  >
+              <Col className='brokercol2' xs={24} sm={12} md={8} lg={8}  >
                 <p className='brokertext2'>Phone Number</p>
                 <Form.Item  >
                   <Input className='driInput'
@@ -159,7 +159,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-              <Col className='brokercol3' xs={24} sm={12} md={8} lg={7}  >
+              <Col className='brokercol3' xs={24} sm={12} md={8} lg={8}  >
                 <p className='brokertext3'>Email</p>
                 <Form.Item  >
                   <Input className='driInput'
@@ -172,9 +172,7 @@ function Broker() {
                   />
                 </Form.Item>
               </Col>
-            </Row>
-            <Row className='broker_row3'>
-              <Col className='brokercol3' xs={24} sm={12} md={8} lg={7}  >
+              <Col className='brokercol3' xs={24} sm={12} md={8} lg={8}  >
                 <p className='brokertext3'>Carrier Setup Link</p>
                 <Form.Item  >
                   <Input className='driInput'
